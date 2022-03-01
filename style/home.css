@@ -1,0 +1,259 @@
+/* -----------------font import -------- */
+
+@font-face {
+    font-family: "Lato-Black";
+    src: url(../fonts/Lato-Black.ttf);
+}
+
+@font-face {
+    font-family: "Lato-BlackItalic";
+    src: url(../fonts/Lato-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: "Lato-bold";
+    src: url(../fonts/Lato-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Lato-thin";
+    src: url(../fonts/Lato-Thin.ttf);
+}
+
+@font-face {
+    font-family: "Lato-light";
+    src: url(../fonts/Lato-Light.ttf);
+}
+
+
+
+
+:root{
+    --primary:#EEBF00;
+    --secondary:#323332;
+    --ternary:#CCE3B2;
+    --danger:#FE5A6F;
+    --pure:#FEFEFE;
+    --light:#F0F0F0;
+    --heaven:#FFFFFF;
+    --footer:#2D333F;
+    --viewallbtn:#01AFEE;
+    --startback:#6DA422;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* ---------media query------------ */
+@media (min-width:475px) {
+   
+    .seller_left
+    {
+        visibility: hidden;
+    }
+}
+
+@media (min-width:768px) {
+     
+    .seller_left
+    {
+        visibility: hidden;
+    }
+    .seller_right{
+        text-align: center;
+        margin-right: 300px;
+    }
+}
+
+@media (min-width:992px) {
+    .seller_left
+    {
+        visibility: visible;
+    } 
+    .seller_right{
+        text-align: center;
+        margin-right: 100px;
+        
+     }
+    
+}
+
+@media (min-width:1200px) {
+     
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.flex{
+    display: flex;
+}
+
+.justify-around{
+    justify-content: space-around;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.text-center{
+    text-align: center;
+}
+.align-center{
+    align-items: center;
+}
+.logo{
+    height: 30px;
+}
+.icons{
+    height: 30px;
+}
+hr{
+     border: 1px solid var(--primary);
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown_web {
+     position: relative;
+     display: inline-block;
+  }
+  .dropdown-content_web {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 350px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown_web:hover .dropdown-content_web {display: block;}
+ 
+.banner{
+    width: 100%;
+    height: 20rem;
+}
+
+.para{
+    width: 15rem; 
+}
+.para1{
+    width: 20rem;
+    margin-bottom: 30px;
+}
+.product_images{
+    width: 15rem;
+}
+.star{
+    display: grid;
+    place-content: center;
+    background: var(--startback);
+    width: 3rem;
+    height: 2rem;
+    margin: auto;
+    border-radius: 5px;
+    color: var(--heaven);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.rate{
+    font-size: small;
+}
+.star_icon
+{
+    margin-left: 5px;
+    height: 14px;
+}
+.best_seller_tag{
+    background: var(--danger);
+    width: 6rem;
+    font-size: smaller;
+    color: var(--pure);
+    border-top-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+}
+.products{
+    overflow: hidden;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    border: 1px dotted var(--ternary);
+    border-radius: 5px;
+}
+.products >h4{
+    color: var(--secondary);
+}
+ 
+.view_all_btn{
+    background: var(--viewallbtn);
+    height: 3rem;
+    width: 7rem;
+    color: var(--pure);
+    border-radius: 5px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+}
+
+.add_card{
+    color: var(--viewallbtn);
+    height: 3rem;
+    width: 14rem;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--ternary);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.add_card:hover{
+ background: var(--viewallbtn);
+ color: var(--light);
+ font-style: bold;
+}
+
+
+.seller_left h1{
+    margin-bottom: 20px;
+    font-family: "Lato-bold";
+    color: var(--secondary);
+}
+.seller_left .para1{
+    color: var(--secondary);
+    line-height: 1.5em;    
+}
