@@ -182,6 +182,7 @@ hr{
     color: var(--heaven);
     margin-bottom: 20px;
     margin-top: 20px;
+    color: var(--pure);
 }
 .rate{
     font-size: small;
@@ -321,8 +322,6 @@ iframe{
 .tree_image{
     width: 100%;
 }
-
- 
 
 .WE_PLANT_GOODNESS {
     position: relative;    
