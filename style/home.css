@@ -34,9 +34,6 @@
     --ternary:#CCE3B2;
     --danger:#FE5A6F;
     --pure:#FEFEFE;
-    --light:#F0F0F0;
-    --heaven:#FFFFFF;
-    --footer:#2D333F;
     --viewallbtn:#01AFEE;
     --startback:#6DA422;
 }
@@ -63,7 +60,7 @@
     {
         visibility: hidden;
     }
-    .seller_right{
+    .container{
         text-align: center;
         margin-right: 300px;
     }
@@ -74,7 +71,7 @@
     {
         visibility: visible;
     } 
-    .seller_right{
+    .container{
         text-align: center;
         margin-right: 100px;
         
@@ -167,14 +164,16 @@ hr{
 }
 
 .para{
-    width: 15rem; 
+    text-align: center;
+    width: 13rem;
+    overflow: hidden; 
 }
 .para1{
     width: 20rem;
     margin-bottom: 30px;
 }
 .product_images{
-    width: 15rem;
+    width: 12rem;
 }
 .star{
     display: grid;
@@ -231,8 +230,8 @@ hr{
 
 .add_card{
     color: var(--viewallbtn);
-    height: 3rem;
-    width: 14rem;
+    height: 2.5rem;
+    width: 11rem;
     display: flex;
     margin: auto;
     align-items: center;
