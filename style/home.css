@@ -287,3 +287,34 @@ hr{
 .deal_of_the_day  .left #offer_day2{
     margin-top: 20px;
 }
+iframe{
+    border-radius: 10px;
+}
+.shop_now{
+    background: var(--viewallbtn);
+    height: 3rem;
+    width: 7rem;
+    color: var(--pure);
+    border-radius: 5px;
+    display: grid;
+    place-content: center;
+    margin: 10px;
+    padding: 10px 0;
+}
+.our{
+     margin: 10px;
+    border: 1px solid var(--viewallbtn);
+    height: 3rem;
+    width: 7rem;
+    color: var(--viewallbtn);
+    border-radius: 5px;
+    display: grid;
+    place-content: center;
+    padding: 10px 0;
+}
+.Our_Goodness_Promise .right{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    text-align: center;
+    width: 500px;
+}
