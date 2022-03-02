@@ -241,6 +241,7 @@ hr{
  background: var(--viewallbtn);
  color: var(--light);
  font-style: bold;
+ color: var(--pure);
 }
 
 
@@ -252,4 +253,37 @@ hr{
 .seller_left .para1{
     color: var(--secondary);
     line-height: 1.5em;    
+}
+.time{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 200px;
+    gap: 10px;
+    color: #6DA422;
+}
+.time >div{
+    box-shadow: 0 4px 8px 0 rgba(202, 201, 201, 0.2);
+    transition: 0.3s;
+   
+}
+.deal_of_the_day .left > div{
+    margin: auto;
+    margin-top: 40px;
+    
+}
+.view_all_Deals_btn{
+    background: var(--viewallbtn);
+    height: 3rem;
+    width: 12rem;
+    color: var(--pure);
+    border-radius: 5px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+}
+.deal_of_the_day  .left #offer_day2{
+    margin-top: 20px;
 }
