@@ -1,20 +1,21 @@
 var list1=
 [
-    {id:1,tag:"BEST SELLER",image_src:"../images/product1.jpg",para:"ramdon text",rate:"4.9",
+    {id:1,tag:"BEST SELLER",image_src:"../images/product1.jpg",para:"Essential Anti-Hair Fall Kit",rate:"4.9",
     star_url:"../icons/star-16.png",price:"$399"},
 
-    {id:2,tag:"BEST SELLER",image_src:"../images/product1.jpg",para:"ramdon text",rate:"4.9",
+    {id:2,tag:"BEST SELLER",image_src:"../images/product1.jpg",para:"Essential Anti-Hair Fall Kit",rate:"4.9",
     star_url:"../icons/star-16.png",price:"$399"},
 
-    {id:3,tag:"BEST SELLER",image_src:"../images/product1.jpg",para:"ramdon text",rate:"4.9",
+    {id:3,tag:"BEST SELLER",image_src:"../images/product1.jpg",para:"Essential Anti-Hair Fall Kit",rate:"4.9",
     star_url:"../icons/star-16.png",price:"$399"},
 
-    {id:4,tag:"BEST SELLER",image_src:"../images/product1.jpg",para:"ramdon text",rate:"4.9",
+    {id:4,tag:"BEST SELLER",image_src:"../images/product1.jpg",para:"Essential Anti-Hair Fall Kit",rate:"4.9",
     star_url:"../icons/star-16.png",price:"$399"},
 
-    {id:5,tag:"BEST SELLER",image_src:"../images/product1.jpg",para:"ramdon text",rate:"4.9",
+    {id:5,tag:"BEST SELLER",image_src:"../images/product1.jpg",para:"Essential Anti-Hair Fall Kit",rate:"4.9",
     star_url:"../icons/star-16.png",price:"$399"}
 ]
+
 
 
 

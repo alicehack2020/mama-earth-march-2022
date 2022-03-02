@@ -42,6 +42,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+     
 }
 
 
@@ -60,10 +61,7 @@
     {
         visibility: hidden;
     }
-    .container{
-        text-align: center;
-        margin-right: 300px;
-    }
+    
 }
 
 @media (min-width:992px) {
@@ -71,11 +69,7 @@
     {
         visibility: visible;
     } 
-    .container{
-        text-align: center;
-        margin-right: 100px;
-        
-     }
+   
     
 }
 
@@ -164,9 +158,11 @@ hr{
 }
 
 .para{
-    text-align: center;
-    width: 13rem;
-    overflow: hidden; 
+    margin: auto;
+    width: 100%; 
+    justify-content: center;
+    overflow: hidden;
+    font-size: small;
 }
 .para1{
     width: 20rem;
@@ -231,7 +227,7 @@ hr{
 .add_card{
     color: var(--viewallbtn);
     height: 2.5rem;
-    width: 11rem;
+    width: 10rem;
     display: flex;
     margin: auto;
     align-items: center;
@@ -239,6 +235,7 @@ hr{
     border: 1px solid var(--ternary);
     margin-bottom: 10px;
     margin-top: 10px;
+    
 }
 .add_card:hover{
  background: var(--viewallbtn);
