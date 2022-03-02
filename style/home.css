@@ -194,7 +194,7 @@ hr{
 {
     margin-left: 5px;
     height: 14px;
-}
+ }
 .best_seller_tag{
     background: var(--danger);
     width: 6rem;
@@ -247,7 +247,11 @@ hr{
  font-style: bold;
  color: var(--pure);
 }
-
+.seller_left
+{
+    padding-left: 50px;
+    margin-right: 10px;
+}
 
 .seller_left h1{
     margin-bottom: 20px;
