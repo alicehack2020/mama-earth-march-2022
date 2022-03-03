@@ -1,0 +1,163 @@
+/* -----------------font import -------- */
+
+@font-face {
+    font-family: "Raleway-regular";
+    src: url(../fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family:"Raleway-Medium" ;
+    src: url(../fonts/Raleway-Medium.ttf);
+}
+
+@font-face {
+    font-family:"Raleway-bold" ;
+    src: url(../fonts/Raleway-bold.ttf);
+}
+
+@font-face {
+    font-family:"Raleway-SemiBold" ;
+    src: url(../fonts/Raleway-SemiBold.ttf);
+}
+
+@font-face {
+    font-family:"Raleway-black" ;
+    src: url(../fonts/Raleway-Black.ttf);
+}
+@font-face {
+    font-family:"Raleway-extrabold" ;
+    src: url(../fonts/Raleway-ExtraBold.ttf);
+}
+/* -----------colour declared-------------- */
+
+:root{
+    --danger:#FE4545;
+    --pure:#FEFEFE;
+    --primary:#f0f0f09c;
+    --primary2:#534e4e42;
+}
+
+/* ------font smoothing applied---------- */
+
+body{
+    --webkit-font-smoothing:antialiased;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+     padding-right: 15%;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+ /* -------to reused created classes for property  utility class----------- */
+.flex{
+    display: flex;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.items-center{
+    align-items: center;
+}
+
+
+
+.justify-center{
+    justify-content: center;
+}
+ .magic-shadow{
+    position: relative;
+    background-color: var(--heaven);
+}
+
+.magic-shadow:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 69px;
+    background-image: url('../icons/shadow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: -22px;
+    position: absolute;
+    z-index: -1;
+}
+.magic-shadow-sm{
+    position: relative;
+    background-color: var(--heaven);
+}
+.magic-shadow-sm:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 69px;
+    background-image: url('../icons/shadow-sm.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: -20px;
+    position: absolute;
+    z-index: -1;
+}
+
+.top-products{
+    background: var(--light);
+    padding: 0%;
+    margin: auto;
+    overflow: hidden;
+}
+ 
+.text-center{
+    text-align: center;
+}
+ /* -----slider inbuild utility class override----------- */
+.slick-slide{
+    margin:0 27px;
+}
+.slick-list{
+    margin: 0 -27px;
+}
+/* ---slider button style--------- */
+.top-products .slider-btn{
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: var(--primary2);
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+
+.prev-btn{
+    position: absolute;
+    top: 46%;
+    left: -1rem;
+    z-index: 1;
+}
+
+.next-btn{
+    position: absolute;
+    top: 46%;
+    right: -1rem;
+    z-index: 1;
+}
+
+.top-products .btn-wrapper{
+    margin-top: 2rem;
+}
+
+.top-products .slider{
+    position: relative;
+}
+
+.slick-track{
+    padding:1rem 0;
+}
