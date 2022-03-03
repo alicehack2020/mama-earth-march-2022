@@ -1,0 +1,152 @@
+:root{
+    --primary:#EEBF00;
+    --secondary:#323332;
+    --ternary:#CCE3B2;
+    --danger:#FE5A6F;
+    --pure:#FEFEFE;
+    --viewallbtn:#01AFEE;
+    --startback:#6DA422;
+    --border:#EBEAEB;
+    --line1:#743D3C;
+    --line2:#5C5CA0;
+    --border2:#E7E8E6
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.payment_screen_main .left .address{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(6,1fr);
+    row-gap: 20px;
+    column-gap: 10px;
+    width: 600px;
+    margin-bottom: 20px;
+ }
+#addres_heading{
+    grid-row:2/3;
+    font-size: x-large;
+    margin-top: -10px;
+    font-style: bold;
+
+}
+.hello_user{
+    font-size: large;
+    color: var(--secondary);
+}
+#fname{
+    grid-row:3/4;
+    grid-column: 1/3;
+}
+#lname{
+    grid-row:3/4;
+    grid-column: 3/-1;
+}
+#email{
+    grid-row:4/5;
+    grid-column: 1/3;
+}
+#phone{
+    grid-row:4/5;
+    grid-column: 3/-1;
+
+}
+#pincode{
+    grid-row:5/6;
+}
+#city{
+    grid-row:5/6;
+    grid-column: 2/4;
+}
+#state{
+    grid-row:5/6;
+    grid-column: 4/-1;
+}
+#address_field{
+    grid-row:6/7;
+    grid-column: 1/-1;
+}
+.flex{
+    display: flex;
+}
+.payment_options_left{
+    border: 2px solid var(--border2);
+    width: 180px;
+}
+.cvv_img{
+    width: 40px;
+    margin-top: 10px;
+}
+.p_method{
+    display: flex;
+   
+}
+
+.p_method{
+    font-size: x-large;
+    font-style: bold;
+}
+.card_details_right{
+    width: 600px;
+ }
+.card_details_right input{
+  height:40px;
+  border: 1px dotted grey;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.payment_options_left input,p{
+     margin: 5px;
+     justify-content: center;
+}
+.card_top{
+    display: grid;
+ }
+#card_number{
+    width: 25.5rem;
+}
+.cvv_date{
+    display: flex;
+    text-align: center; 
+    width: 25.5rem;
+    justify-content: space-around;
+
+}
+#card_user_name{
+    width: 25.5rem;
+}
+.select_payment_mode{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 600px;
+}
+.order_now{
+    text-align: center;
+    width: 25.5rem;
+    align-items: center;
+    height: 30px;
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    color: var(--pure);
+    justify-content: center;
+    margin-left: 10px;
+    background: var(--viewallbtn);
+}
+.payment_screen_main input{
+    border: 2px solid var(--border2);
+}
+.p_method{
+    font-size: large;
+    font-style: bold;
+    margin-bottom: 10px;
+}
+.payment_screen_main .left{
+    margin-left: 100px;
+    margin-top: 20px;
+}
