@@ -9,6 +9,12 @@ let item_count=document.getElementById("item_count")
 let order_summary=document.querySelector(".order_summary")
 let order_now=document.querySelector(".order_now")
 
+order_now.addEventListener("click",goToThankYouPage)
+function goToThankYouPage()
+{
+    window.location="../html/thank_you_page.html"
+}
+
 
 let chekout_data_base=JSON.parse(localStorage.getItem("chekout_data_base"))
 

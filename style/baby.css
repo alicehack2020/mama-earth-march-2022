@@ -35,6 +35,8 @@
     --pure:#FEFEFE;
     --primary:#f0f0f09c;
     --primary2:#534e4e42;
+    --sort:#14B5F0;
+    --border:#313131;
 }
 
 /* ------font smoothing applied---------- */
@@ -171,4 +173,86 @@ body{
 
 .product_images2{
     width: 17rem;
+}
+.updown_img{
+    height: 25px;
+}
+.flex{
+    display: flex;
+}
+.our_products{
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 80px;
+    display: flex;
+     
+}
+.our_products h3{
+    color: var(--sort);
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+}
+.dropdown:hover .dropdown-content {display: block;}
+  
+#myDIV div{
+     padding-top: 10px;
+     padding-bottom: 10px;
+     font-size: medium;
+    color: rgb(34, 33, 32);
+    background-color: white;
+   
+}
+
+#myDIV div:hover{
+    color: #14B5F0;
+    cursor: pointer;
+}
+#the_tags div{
+    margin-left: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.updown_img:hover{
+    cursor: pointer;
+}
+#the_sort:hover{
+    cursor: pointer;  
+}
+.one1{
+    border: 1px solid;
+    width: 80px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 80px;
+    margin-left: 10px;
+    height: 40px;
+    border-color: #302d2d;
+    
+}
+.one1:hover{
+    color: #14B5F0;
+    border: 1px solid #14B5F0;
+    cursor: pointer;
+}
+.Our_Products{
+    margin-left: 110px;
+    margin-bottom: 20px;
 }
