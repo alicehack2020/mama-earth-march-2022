@@ -1,30 +1,45 @@
+let chekout_data_base=JSON.parse(localStorage.getItem("chekout_data_base"))
+
+if(chekout_data_base==null)
+{
+    localStorage.setItem("chekout_data_base",JSON.stringify([]))
+}
+
+
 var list1=
 [
-    {id:1,tag:"BEST SELLER",image_src:"../images/product1.jpg",para:"Essential Anti-Hair Fall Kit",rate:"4.9",
-    star_url:"../icons/star-16.png",price:"$399"},
+    {id:1,p_name:"oild bottel",tag:"BEST SELLER",image_src:"../images/product1.jpg",para:"Essential Anti-Hair Fall Kit",rate:"4.9",
+    star_url:"../icons/star-16.png",price:"399",price_old:"500",symbol:"₹",off:"30%"},
 
-    {id:2,tag:"BEST SELLER",image_src:"../images/product1.jpg",para:"Essential Anti-Hair Fall Kit",rate:"4.9",
-    star_url:"../icons/star-16.png",price:"$399"},
+    {id:2,p_name:"oild bottel",tag:"BEST SELLER",image_src:"../images/product1.jpg",para:"Essential Anti-Hair Fall Kit",rate:"4.9",
+    star_url:"../icons/star-16.png",price:"399",price_old:"500",symbol:"₹",off:"30%"},
 
-    {id:3,tag:"BEST SELLER",image_src:"../images/product1.jpg",para:"Essential Anti-Hair Fall Kit",rate:"4.9",
-    star_url:"../icons/star-16.png",price:"$399"},
+    {id:3,p_name:"oild bottel",tag:"BEST SELLER",image_src:"../images/product1.jpg",para:"Essential Anti-Hair Fall Kit",rate:"4.9",
+    star_url:"../icons/star-16.png",price:"399",price_old:"500",symbol:"₹",off:"30%"},
 
-    {id:4,tag:"BEST SELLER",image_src:"../images/product1.jpg",para:"Essential Anti-Hair Fall Kit",rate:"4.9",
-    star_url:"../icons/star-16.png",price:"$399"},
+    {id:4,p_name:"oild bottel",tag:"BEST SELLER",image_src:"../images/product1.jpg",para:"Essential Anti-Hair Fall Kit",rate:"4.9",
+    star_url:"../icons/star-16.png",price:"399",price_old:"500",symbol:"₹",off:"30%"},
 
-    {id:5,tag:"BEST SELLER",image_src:"../images/product1.jpg",para:"Essential Anti-Hair Fall Kit",rate:"4.9",
-    star_url:"../icons/star-16.png",price:"$399"}
+    {id:5,p_name:"oild bottel",tag:"BEST SELLER",image_src:"../images/product1.jpg",para:"Essential Anti-Hair Fall Kit",rate:"4.9",
+    star_url:"../icons/star-16.png",price:"399",price_old:"500",symbol:"₹",off:"30%"},
+
+    {id:6,p_name:"oild bottel",tag:"BEST SELLER",image_src:"../images/product1.jpg",para:"Essential Anti-Hair Fall Kit",rate:"4.9",
+    star_url:"../icons/star-16.png",price:"399",price_old:"500",symbol:"₹",off:"30%"}
+
 ]
 
 var deal=
 [
-    {id:1,tag:"BEST SELLER",image_src:"../images/product1.jpg",para:"Essential Anti-Hair Fall Kit",rate:"4.9",
-    star_url:"../icons/star-16.png",price:"$399"},
+    {id:7,p_name:"oild bottel",tag:"BEST SELLER",image_src:"../images/product1.jpg",para:"Essential Anti-Hair Fall Kit",rate:"4.9",
+    star_url:"../icons/star-16.png",price:"399",price_old:"500",symbol:"₹",off:"30%"},
 
-    {id:2,tag:"BEST SELLER",image_src:"../images/product1.jpg",para:"Essential Anti-Hair Fall Kit",rate:"4.9",
-    star_url:"../icons/star-16.png",price:"$399"}
+    {id:8,p_name:"oild bottel",tag:"BEST SELLER",image_src:"../images/product1.jpg",para:"Essential Anti-Hair Fall Kit",rate:"4.9",
+    star_url:"../icons/star-16.png",price:"399",price_old:"500",symbol:"₹",off:"30%"}
 ]
 
+
+
+ 
 
 slider_list_1(list1)
 slider_list_2(list1)
@@ -116,11 +131,22 @@ function createitems1(element)
    add_card.className="add_card"
    add_card.innerText=" ADD TO CARD"
 
+   add_card.onclick=function()
+        {
+            addToLocalCard(element)
+        }
+
+    
+   
+
    product_cart.append(best_seller_tag,product_images,para,star,h4,add_card)
    slider1.append(product_cart) 
 
    console.log(product_cart)
 }
+
+
+
 
 function createitems2(element)
 {
@@ -169,6 +195,11 @@ function createitems2(element)
    let add_card=document.createElement("div")
    add_card.className="add_card"
    add_card.innerText=" ADD TO CARD"
+
+   add_card.onclick=function()
+   {
+       addToLocalCard(element)
+   }
 
    product_cart.append(best_seller_tag,product_images,para,star,h4,add_card)
    slider1.append(product_cart) 
@@ -224,6 +255,11 @@ function createitems3(element)
    add_card.className="add_card"
    add_card.innerText=" ADD TO CARD"
 
+   add_card.onclick=function()
+   {
+       addToLocalCard(element)
+   }
+
    product_cart.append(best_seller_tag,product_images,para,star,h4,add_card)
    slider1.append(product_cart) 
 
@@ -278,11 +314,47 @@ function createitemsdeallist(element)
    let add_card=document.createElement("div")
    add_card.className="add_card"
    add_card.innerText=" ADD TO CARD"
-
+   add_card.onclick=function()
+   {
+       addToLocalCard(element)
+   }
    product_cart.append(best_seller_tag,product_images,para,star,h4,add_card)
    deal_of_day_right.append(product_cart) 
 
    //console.log(product_cart)
+}
+
+function addToLocalCard(element)
+{
+    var ldata=JSON.parse(localStorage.getItem("chekout_data_base"))
+    var ans=ldata.filter(res=>{
+        
+        if(res.id==element.id)
+        {
+                return true
+        }
+
+    })
+
+if(ans==false)
+{
+    ldata.push(element)
+    console.log("ldata",ldata)
+    localStorage.setItem("chekout_data_base",JSON.stringify(ldata))
+}
+else{
+    alert("duplicate")
+}
+     
+
+    try{
+        //c_count.innerText=ldata.length
+       // alert(ldata.length)
+    }
+    catch(err){
+        //c_count.innerText=0
+       // alert(ldata.length)
+    }
 }
  
  

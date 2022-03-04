@@ -10,6 +10,8 @@
 </head>
 <body>
     <div class="payment_screen_main">
+      
+       
         <div class="left">
             
             <div class="address">
@@ -79,7 +81,7 @@
                         <input type="text" placeholder="Name on the card" id="card_user_name">
 
                         <div class="cvv_date"> 
-                            <div class="order_now"> Place Order </div>
+                            <div class="order_now"> <a href="./thank_you_page.html">Place Order</a></div>
                         </div>
                         
                         
@@ -91,18 +93,47 @@
             </div>
 
         </div>
+
         <div class="right">
             <div class="checkout_div">
-                <div class="product_list">
+
+                <div class="order_summary flex">
+                    <h2>Order Summary</h2>
+                    <h2 id="item_count"> (5 Items)</h2>
+                    <!-- <img src="../icons/down.png" alt="" class="arrow"> -->
                 </div>
+
+                <div id="product_list">
+                  <div id="product_one"> 
+                   
+                    <div class="left">
+                        <img src="../images/product1.jpg" alt="" class="product_img">
+                    </div>
+                   
+                    <div class="right">
+                        <p id="product_name">the product info</p>
+                        <div class="flex data">
+                            <h2 id="product_price">$768</h2>
+                            <h2 id="product_old_cost">$7658</h2>
+                            <h2 id="product_off">(30% off)</h2>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="../icons/icons8-delete-100.png" alt="" class="delete_icon">
+                     </div>
+                  </div>
+                </div>
+
                 <div class="coupon_code_div">
                 </div>
-                <div class="total_bill">
+
+                <div class="total_bill flex ">
+                    <p>Grand Tota</p>
+                    <h3 id="Total_bill_amount">1000$</h2>
                 </div>
             </div>
         </div>
-
-
+       
         <div id="footer_final"></div>
     </div>
 
