@@ -1,3 +1,7 @@
+import {footer} from "../components/footer.js"
+let footer_final=document.getElementById("footer_final")
+footer_final.innerHTML=footer()
+
 let chekout_data_base=JSON.parse(localStorage.getItem("chekout_data_base"))
 
 if(chekout_data_base==null)
