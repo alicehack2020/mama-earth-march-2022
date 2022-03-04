@@ -341,9 +341,11 @@ if(ans==false)
     ldata.push(element)
     console.log("ldata",ldata)
     localStorage.setItem("chekout_data_base",JSON.stringify(ldata))
+    myFunction_fresh()
 }
 else{
-    alert("duplicate")
+    myFunction()
+   // alert("Already Added")
 }
      
 
@@ -357,4 +359,30 @@ else{
     }
 }
  
+function myFunction() {
+    var x = document.getElementById("snackbar_fail");
+    x.className = "fail";
+    snackbar_fail.innerText="Already Added"
+    setTimeout(function()
+    {
+        
+         x.className = x.className.replace("fail", "");
+        
+    }, 2000);
+  }
+
+
+
+  function myFunction_fresh() {
+    var x = document.getElementById("snackbar_added");
+    x.className = "added";
+    snackbar_added.innerText="Added Successfully"
+    setTimeout(function()
+    {
+       
+         x.className = x.className.replace("added", "");
+        
+    }, 2000);
+  }
+
  

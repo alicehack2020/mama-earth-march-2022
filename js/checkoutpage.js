@@ -4,6 +4,8 @@ footer_final.innerHTML=footer()
 let product_list=document.getElementById("product_list")
 product_list.innerText=""
 
+let Total_bill_amount=document.getElementById("Total_bill_amount")
+let item_count=document.getElementById("item_count")
 let order_summary=document.querySelector(".order_summary")
 let order_now=document.querySelector(".order_now")
 
@@ -14,6 +16,17 @@ if(chekout_data_base==null)
 {
     localStorage.setItem("chekout_data_base",JSON.stringify([]))
 }
+let d=chekout_data_base
+let total=0
+d.forEach(hh=>{
+    total=total+Number(hh.price);
+})
+
+Total_bill_amount.innerText="₹"+total 
+item_count.innerText="( "+d.length+" Items)"
+
+ 
+
 
 //order_now.addEventListener("click",order_now_data)
 
@@ -52,6 +65,9 @@ checkOutIteam(chekout_data_base)
 
 function checkOutIteam(chekout_data_base)
 {
+    let product_list=document.getElementById("product_list")
+    product_list.innerText=""
+
     chekout_data_base.forEach((element)=>{
         let product_list=document.getElementById("product_list")
 
@@ -82,10 +98,11 @@ function checkOutIteam(chekout_data_base)
     
         let price=document.createElement("h2")
         price.id="product_price"
+        price.innerText="₹"+element.price
     
         let product_old_cost=document.createElement("h2")
         product_old_cost.id="product_old_cost"
-        product_old_cost.innerText=element.price_old
+        product_old_cost.innerText="₹"+element.price_old
     
         let product_off=document.createElement("h2")
         product_off.id="product_off"
@@ -118,7 +135,10 @@ function checkOutIteam(chekout_data_base)
 
 function removeToLocalCard(element)
 {
-    var ldata=JSON.parse(localStorage.getItem("chekout_data_base"))
+    // console.log(element);
+     var ldata=JSON.parse(localStorage.getItem("chekout_data_base"))
+    
+
     var list=[]
     
        ldata.filter(res=>{
@@ -132,20 +152,35 @@ function removeToLocalCard(element)
 
     })
 
-    //console.log(ldata)
-    let Total_bill_amount=document.getElementById("Total_bill_amount")
-     localStorage.setItem("chekout_data_base",JSON.stringify(list))
-     //Total_bill_amount.innerText=""
+    console.log(list);
+    myFunction_fresh()
+    //alert(list)
+     
+      localStorage.setItem("chekout_data_base",JSON.stringify(list))
+     
 
-    var  localdata=JSON.parse(localStorage.getItem("chekout_data_base"))
-    //checkOutIteam(localdata)
-
+     var  localdata=JSON.parse(localStorage.getItem("chekout_data_base"))
+     
+     checkOutIteam(localdata) 
+     let total=0
     localdata.forEach(hh=>{
         total=total+Number(hh.price);
     })
 
-    Total_bill_amount.innerText=total
+    let Total_bill_amount=document.getElementById("Total_bill_amount")
+    Total_bill_amount.innerText="₹"+total
         
 
 }
 
+function myFunction_fresh() {
+    var x = document.getElementById("snackbar_added");
+    x.className = "added";
+    snackbar_added.innerText="Removed Successfully"
+    setTimeout(function()
+    {
+       
+         x.className = x.className.replace("added", "");
+        
+    }, 2000);
+  }
