@@ -125,7 +125,8 @@ function createitems1(element)
    star.append(flex)
 
    let h4=document.createElement("h4")
-   h4.innerText=element.price
+   h4.innerText=element.symbol+""+element.price
+
 
    let add_card=document.createElement("div")
    add_card.className="add_card"
@@ -190,7 +191,7 @@ function createitems2(element)
    star.append(flex)
 
    let h4=document.createElement("h4")
-   h4.innerText=element.price
+   h4.innerText=element.symbol+""+element.price
 
    let add_card=document.createElement("div")
    add_card.className="add_card"
@@ -249,7 +250,7 @@ function createitems3(element)
    star.append(flex)
 
    let h4=document.createElement("h4")
-   h4.innerText=element.price
+   h4.innerText=element.symbol+""+element.price
 
    let add_card=document.createElement("div")
    add_card.className="add_card"
@@ -309,7 +310,7 @@ function createitemsdeallist(element)
    star.append(flex)
 
    let h4=document.createElement("h4")
-   h4.innerText=element.price
+   h4.innerText=element.symbol+""+element.price
 
    let add_card=document.createElement("div")
    add_card.className="add_card"
