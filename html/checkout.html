@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/checkout.css">
+    <link rel="stylesheet" href="../style/home.css">
+    <link rel="stylesheet" href="../style/toastmessage.css">
+    <link rel="stylesheet" href="../index.css">
+    <title>checkout</title>
+</head>
+<body>
+
+    
+  <div id="header_section">
+   </div>
+    <div class="payment_screen_main">
+      
+       
+        <div class="left">
+            
+            <div class="address">
+               
+                <div class="hello_user">Hi mangesh,Welcome To Mamaearth</div>
+                <div id="addres_heading">New Delivery Address</div>
+
+                <input type="text" id="fname" placeholder="First Name*">
+                <input type="text" id="lname" placeholder="Last Name*">
+                
+                <input type="text" id="email" placeholder="Email ID*">
+                <input type="text" id="phone" placeholder="Phone number*">
+
+                <input type="text" id="pincode" placeholder="PIN Code*">
+                <input type="text" id="city" placeholder="City*">
+                <input type="text" id="state" placeholder="State*">
+
+                <input type="text" id="address_field" placeholder="Address(Home No/Building,Street,Area)*">
+
+            </div>
+
+            <!-- <div class="address_type">
+            </div> -->
+            <div class="p_method" style="font-size: x-large; font-style: bold;">Choose payment method</div>
+            <div class="select_payment_mode">
+                
+                <div class="payment_options_left">
+                    <div class="flex">
+                        <input type="radio">
+                        <p>UPI</p>
+                    </div>
+                    <div class="flex">
+                        <input type="radio">
+                        <p>Credit,Debit Card</p>
+                    </div>
+                    <div class="flex">
+                        <input type="radio">
+                        <p>Net Banking</p>
+                    </div>
+                    <div class="flex">
+                        <input type="radio">
+                        <p>Wallets</p>
+                    </div>
+                    <div class="flex">
+                        <input type="radio">
+                        <p>Cash on Delivery</p>
+                    </div>
+                </div>
+
+                <div class="card_details_right">
+                    <div class="card_top">
+                      
+                        <div class="flex">
+                            <p>Pay Using Credit Or Debit Cards</p>
+                        </div>
+
+                        <input type="number" placeholder="Card Number" id="card_number">
+                       
+                        <div class="cvv_date"> 
+                            <input type="date" name="" id="date">
+                            <div class="flex">
+                                <input type="number" name="" id="cvv">
+                                <img src="../images/creditCardImage.png" alt="" class="cvv_img">
+                            </div>                       
+                        </div>
+
+                        <input type="text" placeholder="Name on the card" id="card_user_name">
+
+                        <div class="cvv_date"> 
+                            <div class="order_now">Place Order</div>
+                        </div>
+                        
+                        
+                       
+                        
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="right speacial">
+            <div class="checkout_div">
+
+                <div class="order_summary flex">
+                    <h2>Order Summary</h2>
+                    <h2 id="item_count"> (5 Items)</h2>
+                    <!-- <img src="../icons/down.png" alt="" class="arrow"> -->
+                </div>
+
+                <div id="product_list">
+                  <div id="product_one"> 
+                   
+                    <div class="left">
+                        <img src="../images/product1.jpg" alt="" class="product_img">
+                    </div>
+                   
+                    <div class="right">
+                        <p id="product_name">the product info</p>
+                        <div class="flex data">
+                            <h2 id="product_price">$768</h2>
+                            <h2 id="product_old_cost">$7658</h2>
+                            <h2 id="product_off">(30% off)</h2>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="../icons/icons8-delete-100.png" alt="" class="delete_icon">
+                     </div>
+                  </div>
+                </div>
+
+                <div class="coupon_code_div">
+                </div>
+
+                <div class="total_bill flex ">
+                    <p>Grand Tota</p>
+                    <h3 id="Total_bill_amount">100</h2>
+                    
+                        <div id="snackbar_added"></div>
+                </div>
+            </div>
+        </div>
+       
+        <div id="footer_final"></div>
+    </div>
+
+    <script src="../js/checkoutpage.js" type="module"></script>
+</body>
+</html>

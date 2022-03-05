@@ -1,0 +1,258 @@
+/* -----------------font import -------- */
+
+@font-face {
+    font-family: "Raleway-regular";
+    src: url(../fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family:"Raleway-Medium" ;
+    src: url(../fonts/Raleway-Medium.ttf);
+}
+
+@font-face {
+    font-family:"Raleway-bold" ;
+    src: url(../fonts/Raleway-bold.ttf);
+}
+
+@font-face {
+    font-family:"Raleway-SemiBold" ;
+    src: url(../fonts/Raleway-SemiBold.ttf);
+}
+
+@font-face {
+    font-family:"Raleway-black" ;
+    src: url(../fonts/Raleway-Black.ttf);
+}
+@font-face {
+    font-family:"Raleway-extrabold" ;
+    src: url(../fonts/Raleway-ExtraBold.ttf);
+}
+/* -----------colour declared-------------- */
+
+:root{
+    --danger:#FE4545;
+    --pure:#FEFEFE;
+    --primary:#f0f0f09c;
+    --primary2:#534e4e42;
+    --sort:#14B5F0;
+    --border:#313131;
+}
+
+/* ------font smoothing applied---------- */
+
+body{
+    --webkit-font-smoothing:antialiased;
+    overflow-x: hidden;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1000px;
+    text-align: center;
+    margin: 0 auto; 
+}
+
+ /* -------to reused created classes for property  utility class----------- */
+.flex{
+    display: flex;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.items-center{
+    align-items: center;
+}
+
+
+
+.justify-center{
+    justify-content: center;
+}
+ .magic-shadow{
+    position: relative;
+    background-color: var(--heaven);
+}
+
+.magic-shadow:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 69px;
+    background-image: url('../icons/shadow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: -22px;
+    position: absolute;
+    z-index: -1;
+}
+.magic-shadow-sm{
+    position: relative;
+    background-color: var(--heaven);
+}
+.magic-shadow-sm:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 69px;
+    background-image: url('../icons/shadow-sm.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: -20px;
+    position: absolute;
+    z-index: -1;
+}
+
+.top-products{
+    background: var(--light);
+    padding: 0%;
+    margin: auto;
+    overflow: hidden;
+}
+ 
+.text-center{
+    text-align: center;
+}
+ /* -----slider inbuild utility class override----------- */
+.slick-slide{
+    margin:0 27px;
+}
+.slick-list{
+    margin: 0 -27px;
+}
+/* ---slider button style--------- */
+.top-products .slider-btn{
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: var(--primary2);
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+
+.prev-btn{
+    position: absolute;
+    top: 46%;
+    left: -1rem;
+    z-index: 1;
+}
+
+.next-btn{
+    position: absolute;
+    top: 46%;
+    right: -1rem;
+    z-index: 1;
+}
+
+.top-products .btn-wrapper{
+    margin-top: 2rem;
+}
+
+.top-products .slider{
+    position: relative;
+}
+
+.slick-track{
+    padding:1rem 0;
+}
+#deal_of_day_right{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 0 100px;
+    
+
+}
+
+.product_images2{
+    width: 17rem;
+}
+.updown_img{
+    height: 25px;
+}
+.flex{
+    display: flex;
+}
+.our_products{
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 80px;
+    display: flex;
+     
+}
+.our_products h3{
+    color: var(--sort);
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+}
+.dropdown:hover .dropdown-content {display: block;}
+  
+#myDIV div{
+     padding-top: 10px;
+     padding-bottom: 10px;
+     font-size: medium;
+    color: rgb(34, 33, 32);
+    background-color: white;
+   
+}
+
+#myDIV div:hover{
+    color: #14B5F0;
+    cursor: pointer;
+}
+#the_tags div{
+    margin-left: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.updown_img:hover{
+    cursor: pointer;
+}
+#the_sort:hover{
+    cursor: pointer;  
+}
+.one1{
+    border: 1px solid;
+    width: 80px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 80px;
+    margin-left: 10px;
+    height: 40px;
+    border-color: #302d2d;
+    
+}
+.one1:hover{
+    color: #14B5F0;
+    border: 1px solid #14B5F0;
+    cursor: pointer;
+}
+.Our_Products{
+    margin-left: 110px;
+    margin-bottom: 20px;
+}

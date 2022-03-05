@@ -1,0 +1,39 @@
+.center_pop_up{
+    position:absolute;
+    top:45%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    display: none;
+  }
+  
+  .center_pop_up{
+      background-color: rgb(119, 110, 110);
+      width: 400px;
+      height: 400px;
+      border-radius: 10px;
+      text-align: center;
+  }
+  .t_and_c{
+    color: aqua;
+  }
+.flex{
+    display: flex;
+}
+.login_heading{
+    color: #2FBDF2;
+}
+.login_sub_heading{
+    
+    margin: 10px;
+    justify-content: space-between;
+}
+.login_sub_heading p{
+    text-align: left;
+    margin: 10px;
+    justify-content: space-between;
+}
+.login_sub_heading img{
+    width: 70px;
+}
+
+

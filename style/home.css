@@ -172,7 +172,7 @@ hr{
     margin-bottom: 30px;
 }
 .product_images{
-    width: 12rem;
+    width: 16rem;
 }
 .star{
     display: grid;
@@ -226,6 +226,20 @@ hr{
     justify-content: center;
     align-items: center;
      
+}
+
+.view_all_btn:hover{
+    cursor: pointer;
+    background-color: rgb(102, 199, 238);
+     
+}
+.view_all_Deals_btn:hover{
+    cursor: pointer;
+    background-color: rgb(102, 199, 238);   
+}
+.shop_now:hover{
+    cursor: pointer;
+   background-color: rgb(102, 199, 238);   
 }
 
 .add_card{
