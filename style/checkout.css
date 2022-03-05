@@ -36,6 +36,11 @@
     column-gap: 10px;
     width: 600px;
     margin-bottom: 20px;
+    
+ }
+
+ .address input{
+      padding-left: 10px;
  }
 #addres_heading{
     grid-row:2/3;

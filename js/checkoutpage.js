@@ -1,6 +1,14 @@
 import {footer} from "../components/footer.js"
 let footer_final=document.getElementById("footer_final")
 footer_final.innerHTML=footer()
+
+import {navbar} from "../components/navbar.js"
+let header_section=document.getElementById("header_section")
+header_section.innerHTML=navbar()
+
+
+
+
 let product_list=document.getElementById("product_list")
 product_list.innerText=""
 

@@ -8,32 +8,57 @@ if(chekout_data_base==null)
 
 var list1=
 [
-    {id:1,p_name:"oild bottel",tag:"BEST SELLER",image_src:"../images/product1.jpg",para:"Essential Anti-Hair Fall Kit",rate:"4.9",
-    star_url:"../icons/star-16.png",price:"399",price_old:"500",symbol:"₹",off:"30%"},
+    {id:101,p_name:"oild bottel",tag:"BEST SELLER",image_src:"../images/product1.jpg",para:"Onion Hair Oil for Hair Regrowth and Hair Fall Control with Redensyl, 150ml",rate:"4.9",
+    star_url:"../icons/star-16.png",price:"399",price_old:"500",symbol:"₹",off:"50%"},
 
-    {id:2,p_name:"oild bottel",tag:"BEST SELLER",image_src:"../images/product1.jpg",para:"Essential Anti-Hair Fall Kit",rate:"4.9",
-    star_url:"../icons/star-16.png",price:"399",price_old:"500",symbol:"₹",off:"30%"},
+    {id:102,p_name:"Onion Shampoo with Onion and Plant Keratin",tag:"BEST SELLER",image_src:"../images/product2.jpg",para:"Onion Shampoo with Onion and Plant Keratin for Hair Fall Control - 250ml",rate:"4.0",
+    star_url:"../icons/star-16.png",price:"199",price_old:"500",symbol:"₹",off:"40%"},
 
-    {id:3,p_name:"oild bottel",tag:"BEST SELLER",image_src:"../images/product1.jpg",para:"Essential Anti-Hair Fall Kit",rate:"4.9",
-    star_url:"../icons/star-16.png",price:"399",price_old:"500",symbol:"₹",off:"30%"},
+    {id:103,p_name:"Vitamin C Foaming Face Wash",tag:"BEST SELLER",image_src:"../images/product3.jpg",para:"Vitamin C Foaming Face Wash with Vitamin C and Turmeric for Skin Illumination - 150ml",rate:"3.9",
+    star_url:"../icons/star-16.png",price:"599",price_old:"700",symbol:"₹",off:"10%"},
 
-    {id:4,p_name:"oild bottel",tag:"BEST SELLER",image_src:"../images/product1.jpg",para:"Essential Anti-Hair Fall Kit",rate:"4.9",
-    star_url:"../icons/star-16.png",price:"399",price_old:"500",symbol:"₹",off:"30%"},
+    {id:104,p_name:"Ubtan Face Wash with Turmeric ",tag:"BEST SELLER",image_src:"../images/product4.jpg",para:"Ubtan Face Wash with Turmeric & Saffron for Tan Removal – 100ml",rate:"4.7",
+    star_url:"../icons/star-16.png",price:"999",price_old:"1000",symbol:"₹",off:"30%"},
 
-    {id:5,p_name:"oild bottel",tag:"BEST SELLER",image_src:"../images/product1.jpg",para:"Essential Anti-Hair Fall Kit",rate:"4.9",
-    star_url:"../icons/star-16.png",price:"399",price_old:"500",symbol:"₹",off:"30%"},
+    {id:105,p_name:"Bye Bye Blemishes Face Cream ",tag:"BEST SELLER",image_src:"../images/product5.jpg",para:"Bye Bye Blemishes Face Cream for Reducing Pigmentation and Blemishes with Mulberry Extract and Vitamin C -30ml",rate:"5.0",
+    star_url:"../icons/star-16.png",price:"599",price_old:"600",symbol:"₹",off:"30%"},
 
-    {id:6,p_name:"oild bottel",tag:"BEST SELLER",image_src:"../images/product1.jpg",para:"Essential Anti-Hair Fall Kit",rate:"4.9",
-    star_url:"../icons/star-16.png",price:"399",price_old:"500",symbol:"₹",off:"30%"}
+    {id:106,p_name:"Tea Tree Facewash",tag:"BEST SELLER",image_src:"../images/product6.jpg",para:"Tea Tree Facewash for acne and pimples, 100ml",rate:"4.4",
+    star_url:"../icons/star-16.png",price:"299",price_old:"500",symbol:"₹",off:"30%"}
 
 ]
 
+var list2=
+[
+    {id:107,p_name:"Anti-Hair Fall Spa Kit",tag:"BEST SELLER",image_src:"../images/product7.jpg",para:"Anti-Hair Fall Spa Kit",rate:"4.9",
+    star_url:"../icons/star-16.png",price:"168",price_old:"500",symbol:"₹",off:"50%"},
+
+    {id:108,p_name:"Baby Essential Hamper Kit",tag:"BEST SELLER",image_src:"../images/product8.jpg",para:"Baby Essential Hamper Kit ",rate:"4.0",
+    star_url:"../icons/star-16.png",price:"199",price_old:"500",symbol:"₹",off:"40%"},
+
+    {id:109,p_name:"Acne Marks Reduction Kit",tag:"BEST SELLER",image_src:"../images/product9.jpg",para:"Acne Marks Reduction Kit",rate:"3.9",
+    star_url:"../icons/star-16.png",price:"399",price_old:"700",symbol:"₹",off:"10%"},
+
+    {id:110,p_name:"Tea Tree Anti-Dandruff Hair Regime Kit",tag:"BEST SELLER",image_src:"../images/product10.jpg",para:"Tea Tree Anti-Dandruff Hair Regime Kit",rate:"4.7",
+    star_url:"../icons/star-16.png",price:"999",price_old:"1000",symbol:"₹",off:"30%"},
+
+    {id:111,p_name:"Aqua Glow Skin Refreshing ",tag:"BEST SELLER",image_src:"../images/product11.jpg",para:"Aqua Glow Skin Refreshing Kit for Hydrated & Fresh Skin",rate:"5.0",
+    star_url:"../icons/star-16.png",price:"599",price_old:"600",symbol:"₹",off:"30%"},
+
+    {id:112,p_name:"Tan Removal Regimen Kit",tag:"BEST SELLER",image_src:"../images/product12.jpg",para:"Tea Tree Facewash for acne and pimples, 100ml",rate:"4.4",
+    star_url:"../icons/star-16.png",price:"299",price_old:"500",symbol:"₹",off:"30%"}
+
+]
+
+
+
+
 var deal=
 [
-    {id:7,p_name:"oild bottel",tag:"BEST SELLER",image_src:"../images/product1.jpg",para:"Essential Anti-Hair Fall Kit",rate:"4.9",
+    {id:113,p_name:"oild bottel",tag:"BEST SELLER",image_src:"../images/product1.jpg",para:"Essential Anti-Hair Fall Kit",rate:"4.9",
     star_url:"../icons/star-16.png",price:"399",price_old:"500",symbol:"₹",off:"30%"},
 
-    {id:8,p_name:"oild bottel",tag:"BEST SELLER",image_src:"../images/product1.jpg",para:"Essential Anti-Hair Fall Kit",rate:"4.9",
+    {id:114,p_name:"Intense Hair Treatment Kit",tag:"BEST SELLER",image_src:"../images/product13.jpg",para:"Intense Hair Treatment Kit",rate:"4.9",
     star_url:"../icons/star-16.png",price:"399",price_old:"500",symbol:"₹",off:"30%"}
 ]
 
@@ -42,7 +67,7 @@ var deal=
  
 
 slider_list_1(list1)
-slider_list_2(list1)
+slider_list_2(list2)
 slider_list_3(list1)
 
 deal_list(deal)
@@ -103,7 +128,7 @@ function createitems1(element)
 
    let para=document.createElement("p")
    para.className="para"
-   para.innerText=element.para;
+   para.innerText=element.p_name;
 
 
    let star=document.createElement("div")
@@ -169,7 +194,7 @@ function createitems2(element)
 
    let para=document.createElement("p")
    para.className="para"
-   para.innerText=element.para;
+   para.innerText=element.p_name;
 
 
    let star=document.createElement("div")

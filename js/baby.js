@@ -2,6 +2,13 @@ import {footer} from "../components/footer.js"
 let footer_final=document.getElementById("footer_final")
 footer_final.innerHTML=footer()
 
+import {navbar} from "../components/navbar.js"
+let header_section=document.getElementById("header_section")
+header_section.innerHTML=navbar()
+
+
+
+
 let sortlow=document.getElementById("sort_low")
 let sorthigh=document.getElementById("sort_high")
 
