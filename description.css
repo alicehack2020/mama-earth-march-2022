@@ -1,0 +1,178 @@
+
+        *{
+            box-sizing: border-box;
+        }
+        #main{
+            display: flex;
+            height:600px; 
+            width: 90%;
+            margin: auto;
+            margin-top: 100px;
+        }
+        #dummy {
+            width: 300px;
+            /* border: 1px solid red; */
+            margin-left: 500px;
+            padding: 10px 0px;
+            border-radius: 5px;
+            margin-top: -100px;
+            /* height: 200px; */
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        }
+
+        #dummy > button{
+            border: none;
+            margin:3% 2% 0% 2%;
+            outline: none;
+            border-radius: 4px;
+            width: 96%;
+            
+            padding: 15px 0px;
+            background: #00aeef;
+            color: white;
+            font-style: normal;
+
+        }
+
+        #dummy > .qty {
+            margin-left: 20px;
+        } 
+
+
+        .greyColor {
+            color: grey;
+        }
+        .redColor {
+            color: red;
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        #container1{
+            height: 600px;
+            width: 450px;
+            /* border: 1px solid black; */
+            margin-right: 20px;
+        }
+        #maincontainer{
+            /* height: 320px; */
+            width: 100%;
+            /* border: 1px solid black; */
+            border-radius: 10px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        }
+      
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+#maincontainer > .container > img {
+    border-radius: 4px;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;  
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  /* background-color: #222; */
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.price {
+    color: #65a730;
+}
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+#container2 {
+   line-height: 10px
+}
+
+h2,h3,h4{
+padding-left: 20px;
+}
+        .images{
+            width: 300px;
+            height: 70px;
+            margin-left: 20px;
+        }
+        .images > img {
+            width: 100%;
+            height: 100%;
+        
+        }
+        .star {
+            margin-left: 10px;
+        }
+        p > img > span {
+            font-size: 25px;
+        }
