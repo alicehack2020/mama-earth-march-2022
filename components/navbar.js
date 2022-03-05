@@ -6,7 +6,6 @@ let navbar=()=>{
         <li><i class="fa-solid fa-user"></i></li>
     </ul>
 </div>
-
 <div id="container1">
 <a href="../index.html"> <img  class="logo" src="https://mamaearthp.imgix.net/wysiwyg/mamaearth-logo.png?auto=format&fit=scale" alt="logo">
     <div></a>
@@ -18,7 +17,6 @@ let navbar=()=>{
     <a href="../html/login.html"><span class="loginicon" ><i class="fa-solid fa-user"></i></span> Login</a>
     </div> 
 </div> 
-
 <div id="container2">
     <ul class="mainmenu">
     <li class="category"> <a href="../index.html">HOME</a></li>
@@ -36,3 +34,4 @@ let navbar=()=>{
 </div>`
 }
 export {navbar}
+ 
