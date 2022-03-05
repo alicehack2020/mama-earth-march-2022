@@ -17,7 +17,9 @@
      padding: 5px 0px ;
      list-style: none;
  }
- 
+ #userName{
+     display: none;
+ }
  #container1{
     display: flex;
     align-items: center;
@@ -26,6 +28,10 @@
     border-bottom: 1px solid lightgray;
     
     /* background: grey; */
+}
+.search_section{
+    margin-left: 20px;
+    margin-right: -40px;
 }
 
 
@@ -61,10 +67,15 @@
 .logincart{
     display: flex;
     gap: 40px;
-    margin-right: 200px;
+    margin-right: 50px;
+}
+.logincart a{
+  font-size: medium;
+  font-family: "Roboto";
 }
 .loginicon{
     color: #00afef;
+    margin-right: 5px;
 }
 a{
     text-decoration: none;

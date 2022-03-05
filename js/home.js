@@ -31,11 +31,13 @@ function closePopUp2()
 
 
 let LOGIN_WITH_OTP=document.getElementById("LOGIN_WITH_OTP")
+let userName=document.getElementById("userName")
 LOGIN_WITH_OTP.addEventListener("click",otpopen)
 function otpopen()
 {
     center_pop_up.style.display="none"
     center_pop_up2.style.display="block"
+   
 
 }
 
@@ -46,6 +48,8 @@ VERIFY_OTP.addEventListener("click",VERIFY_OTP1)
 function VERIFY_OTP1()
 {
      center_pop_up2.style.display="none"
+     userName.style.display="block"
+     localStorage.setItem("user_names","Mangesh Pandit")
 }
 
 
@@ -177,6 +181,11 @@ function createitems1(element)
    product_images.src=element.product_images
    product_images.className="product_images"
    product_images.src=element.image_src
+   product_images.onclick=function()
+   {
+       SaveInOnePlace(element)
+       window.location="../html/desriptionpage.html"
+   }
 
    let para=document.createElement("p")
    para.className="para"
@@ -243,7 +252,11 @@ function createitems2(element)
    product_images.src=element.product_images
    product_images.className="product_images"
    product_images.src=element.image_src
-
+   product_images.onclick=function()
+   {
+       SaveInOnePlace(element)
+       window.location="../html/desriptionpage.html"
+   }
    let para=document.createElement("p")
    para.className="para"
    para.innerText=element.p_name;
@@ -302,6 +315,11 @@ function createitems3(element)
    product_images.src=element.product_images
    product_images.className="product_images"
    product_images.src=element.image_src
+   product_images.onclick=function()
+   {
+       SaveInOnePlace(element)
+       window.location="../html/desriptionpage.html"
+   }
 
    let para=document.createElement("p")
    para.className="para"
@@ -463,3 +481,10 @@ function myFunction() {
     }, 2000);
   }
 
+
+
+  function SaveInOnePlace(element)
+{
+     
+    localStorage.setItem("SaveInOnePlace",JSON.stringify(element))   
+}

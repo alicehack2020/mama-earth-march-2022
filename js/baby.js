@@ -229,7 +229,7 @@ function createitemsdeallist(element)
    product_images.className="product_images2"
    product_images.src=element.image_src
 
-   product_images.onclick=function()
+   product_cart.onclick=function()
    {
        SaveInOnePlace(element)
        window.location="../html/desriptionpage.html"

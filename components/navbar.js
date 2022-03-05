@@ -8,13 +8,14 @@ let navbar=()=>{
 </div>
 <div id="container1">
 <a href="../index.html"> <img  class="logo" src="https://mamaearthp.imgix.net/wysiwyg/mamaearth-logo.png?auto=format&fit=scale" alt="logo">
-    <div></a>
+    <div class="search_section"></a>
     <input class="searchbar" type="text" placeholder="Search for products...">
     <button class="searchbtn"><span class="icon" ><i class="fa-solid fa-magnifying-glass"></i></span> Search</button>
     </div>
     <div class="logincart">
     <a href="../html/checkout.html"><span class="loginicon" ><i class="fa-solid fa-cart-shopping"></i></span> Cart</a>
     <a href="../html/login.html"><span class="loginicon" ><i class="fa-solid fa-user"></i></span> Login</a>
+    <a href="#" id="userName" style="display:block"><span class="loginicon"><i class=" "></i></span>Mangesh Pandit</a>
     </div> 
 </div> 
 <div id="container2">
