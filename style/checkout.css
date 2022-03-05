@@ -186,8 +186,7 @@
 
 #product_one{
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    
+    grid-template-columns: 2fr 2fr 1fr;
     border: 1px solid var(--border2);
 }
 #product_list h2{
@@ -209,10 +208,10 @@
  }
 
 
-.product_img{
-    width: 100px;
-    border-radius: 10px;
-    border: 2px solid var(--border2);
+.product_img2{
+   
+     width: 100px;
+     
 }
 #product_name{
     margin-top: 20px;

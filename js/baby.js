@@ -141,11 +141,7 @@ function createitems1(element)
     product_cart.className="products food-card .magic-shadow-sm"
     product_cart.id="product1"
 
-    product_cart.onclick=function()
-    {
-        SaveInOnePlace(element)
-        window.location="../html/desriptionpage.html"
-    }
+    
      
     let best_seller_tag=document.createElement("div")
     best_seller_tag.className="best_seller_tag"
@@ -156,6 +152,12 @@ function createitems1(element)
    product_images.src=element.product_images
    product_images.className="product_images2"
    product_images.src=element.image_src
+
+   product_images.onclick=function()
+    {
+        SaveInOnePlace(element)
+        window.location="../html/desriptionpage.html"
+    }
 
    let para=document.createElement("p")
    para.className="para"
@@ -226,6 +228,13 @@ function createitemsdeallist(element)
    product_images.src=element.product_images
    product_images.className="product_images2"
    product_images.src=element.image_src
+
+   product_images.onclick=function()
+   {
+       SaveInOnePlace(element)
+       window.location="../html/desriptionpage.html"
+   }
+    
 
    let para=document.createElement("p")
    para.className="para"
