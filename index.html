@@ -10,6 +10,7 @@
    <link rel="stylesheet" href="./style/product_slider.css">
    <link rel="stylesheet" href="./style/toastmessage.css">
    <link rel="stylesheet" href="./style/pop_up.css">
+   <!-- <link rel="stylesheet" href="./style/login.css"> -->
    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 <body>
@@ -25,13 +26,15 @@
 
    <div id="container1">
        <img  class="logo" src="https://mamaearthp.imgix.net/wysiwyg/mamaearth-logo.png?auto=format&fit=scale" alt="logo">
-       <div>
+       <div class="search_section">
         <input class="searchbar" type="text" placeholder="Search for products...">
         <button class="searchbtn"><span class="icon" ><i class="fa-solid fa-magnifying-glass"></i></span> Search</button>
        </div>
        <div class="logincart">
         <a href="./html/checkout.html"><span class="loginicon" ><i class="fa-solid fa-cart-shopping"></i></span> Cart</a>
         <a href="#" class="loginform"><span class="loginicon"><i class="fa-solid fa-user"></i></span>Login</a>
+        <a href="#" id="userName"><span class="" ><i class="fa-solid fa-user"></i></span>Mangesh Pandit</a>
+
        </div> 
    </div> 
 
@@ -45,7 +48,7 @@
         <li class="category"> <a href="bodt.html">BODY</a></li>
         <li class="category"> <a href="giftpacks.html">GIFT PACKS</a></li>
         <li class="category"> <a href="allproducts">ALL PRODUCTS</a> </li>
-        <li class="category"> <a href="blog.html">BLOG</a></li>
+        <li class="category"> <a href="../blogs/blog.html">BLOG</a></li>
         <li class="category"> <a href="plantgoodness.html">PLANT GOODNESS</a></li>
         <li class="category"> <a href="storelocator.html">STORE LOCATOR</a></li>
        </ul>  
@@ -53,23 +56,49 @@
    <div id="slideshow"></div>
 
    <div class="center_pop_up">
-     <div class="cancel">cancel</div>
+     <div id="cancel">
+         <img src="./images/close.svg" alt=""></div>
       <h2 class="login_heading">Login to get started</h2>
+
       <div class="flex login_sub_heading">
         <img src="./images/login_mobile_icon.svg" alt="">
         <p>Get access to your orders, track
             previous order & Redeem Mama
             Cash</p>
       </div>
-      <input type="number" name="" id="">
-      <p>By Continuing, you agree to Mamaearth's <span class="t_and_c">Terms's and</span></p>
-      <p><span class="t_and_c">conditions</span>and<span class="t_and_c">Privacy Policy</span></p>
-    
-   </div>
- </div>
-    </div>
+
+      <input type="phone" name="" id="mobile_number" placeholder="Enter Phone Number">
+      <div id="bottom1">
+        <p>By Continuing, you agree to Mamaearth's <span class="t_and_c">Terms's and</span></p>
+        <p><span class="t_and_c">conditions</span>and<span class="t_and_c">Privacy Policy</span></p>
+        
+        <div id="LOGIN_WITH_OTP">LOGIN WITH OTP</div>
+        <div id="CONTINUE_AS_GUEST">CONTINUE AS GUEST</div>
+
+      </div>
   </div>
-  
+
+  <div class="center_pop_up2">
+    <div id="cancel2">
+        <img src="./images/close.svg" alt=""></div>
+     <h2 class="login_heading">Verify OTP</h2>
+
+     <div class="flex otp_sub_heading">
+       <img src="./images/otp.svg" alt="">
+     </div>
+
+     <input type="phone" name="" id="mobile_OTP" placeholder="Enter OTP">
+     <div id="bottom1">
+       <p>By Continuing, you agree to Mamaearth's <span class="t_and_c">Terms's and</span></p>
+       <p><span class="t_and_c">conditions</span>and<span class="t_and_c">Privacy Policy</span></p>
+       
+       <div id="VERIFY_OTP">VERIFY</div>
+       <div id="CONTINUE_AS_GUEST">DO NOT SHARE THIS OTP WITH ANYONE</div>
+
+     </div>
+ </div>
+
+ 
 
    <div class="top-products flex align-center">
         

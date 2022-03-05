@@ -17,7 +17,9 @@
      padding: 5px 0px ;
      list-style: none;
  }
- 
+ #userName{
+     display: none;
+ }
  #container1{
     display: flex;
     align-items: center;
@@ -27,9 +29,16 @@
     
     /* background: grey; */
 }
+.search_section{
+    margin-left: 20px;
+    margin-right: -40px;
+}
+
+
 .logo{
     margin-left: 100px;
-    height: 35px;
+    height: 40px;
+    margin-right: 120px;
     max-width: 145px;
 }
 .searchbar{
@@ -58,15 +67,28 @@
 .logincart{
     display: flex;
     gap: 40px;
-    margin-right: 200px;
+    margin-right: 50px;
+}
+.logincart a{
+  font-size: medium;
+  font-family: "Roboto";
 }
 .loginicon{
     color: #00afef;
+    margin-right: 5px;
 }
 a{
     text-decoration: none;
-    font-size: 18px;
-    color: black;
+     font-size: 0.8rem;
+    font-weight: 600;
+     color: rgb(92, 92, 92);
+    font-family:"Roboto";
+    margin-left: 10px;
+    font-size: small;
+    font-style: bold;
+}
+a:hover{
+    color: #00afef;
 }
 #container2{
     height: 40px;
@@ -75,7 +97,8 @@ a{
     align-items: center;
     justify-content: center;
     max-width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  /* //  box-shadow: 0 4px 8px 0 rgba(231, 13, 13, 0), 0 6px 20px 0 rgb(105, 102, 102); */
+
 }
 .mainmenu{
     display: flex;
@@ -84,6 +107,8 @@ a{
     font-size: 10px;
     align-items: center;
 }
+
+ 
 img{
     border-style: none;
     max-width: 100%;

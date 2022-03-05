@@ -1,6 +1,7 @@
 let loginicon=document.querySelector(".loginform")
 
 let center_pop_up=document.querySelector(".center_pop_up")
+let center_pop_up2=document.querySelector(".center_pop_up2")
 
 loginicon.addEventListener("click",openLoginForm)
 
@@ -10,7 +11,46 @@ function openLoginForm()
 }
 
 
+let cancel=document.getElementById("cancel")
+cancel.addEventListener("click",closePopUp)
+function closePopUp()
+{
+    center_pop_up.style.display="none"
+}
 
+
+let cancel2=document.getElementById("cancel2")
+cancel2.addEventListener("click",closePopUp2)
+
+function closePopUp2()
+{
+    center_pop_up2.style.display="none"
+}
+
+
+
+
+let LOGIN_WITH_OTP=document.getElementById("LOGIN_WITH_OTP")
+let userName=document.getElementById("userName")
+LOGIN_WITH_OTP.addEventListener("click",otpopen)
+function otpopen()
+{
+    center_pop_up.style.display="none"
+    center_pop_up2.style.display="block"
+   
+
+}
+
+
+
+let VERIFY_OTP=document.getElementById("VERIFY_OTP")
+VERIFY_OTP.addEventListener("click",VERIFY_OTP1)
+function VERIFY_OTP1()
+{
+     center_pop_up2.style.display="none"
+     userName.style.display="block"
+     localStorage.setItem("user_names","Mangesh Pandit")
+}
 
 
 
@@ -141,6 +181,11 @@ function createitems1(element)
    product_images.src=element.product_images
    product_images.className="product_images"
    product_images.src=element.image_src
+   product_images.onclick=function()
+   {
+       SaveInOnePlace(element)
+       window.location="../html/desriptionpage.html"
+   }
 
    let para=document.createElement("p")
    para.className="para"
@@ -207,7 +252,11 @@ function createitems2(element)
    product_images.src=element.product_images
    product_images.className="product_images"
    product_images.src=element.image_src
-
+   product_images.onclick=function()
+   {
+       SaveInOnePlace(element)
+       window.location="../html/desriptionpage.html"
+   }
    let para=document.createElement("p")
    para.className="para"
    para.innerText=element.p_name;
@@ -266,6 +315,11 @@ function createitems3(element)
    product_images.src=element.product_images
    product_images.className="product_images"
    product_images.src=element.image_src
+   product_images.onclick=function()
+   {
+       SaveInOnePlace(element)
+       window.location="../html/desriptionpage.html"
+   }
 
    let para=document.createElement("p")
    para.className="para"
@@ -427,3 +481,10 @@ function myFunction() {
     }, 2000);
   }
 
+
+
+  function SaveInOnePlace(element)
+{
+     
+    localStorage.setItem("SaveInOnePlace",JSON.stringify(element))   
+}

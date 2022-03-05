@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../style/faq.css">
     <link rel="stylesheet" href="../index.css">
     <script src="https://kit.fontawesome.com/de556dab3a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <title>Document</title>
     <link rel="stylesheet" href="../style/description.css">
 </head>
@@ -23,7 +24,7 @@
                 <!-- Full-width images with number text -->
                 <div class="mySlidesA">
                 <div class="numbertext">1 / 6</div>
-                    <img src="https://honasa-mamaearth-production.imgix.net/_/o/_onion-oil-150ml_.jpg?auto=format&fit=crop&w=768&auto=compress" style="width:100%">
+                    <img src="https://honasa-mamaearth-production.imgix.net/_/o/_onion-oil-150ml_.jpg?auto=format&fit=crop&w=768&auto=compress" style="width:100%" class="image_main">
                 </div>
             
                 <div class="mySlidesA">
@@ -63,7 +64,7 @@
                 <!-- Thumbnail images -->
                 <div class="row">
                 <div class="column">
-                    <img class="demo cursor" src="https://honasa-mamaearth-production.imgix.net/_/o/_onion-oil-150ml_.jpg?auto=format&fit=crop&w=768&auto=compress" style="width:100%" onclick="currentSlide(1)" >
+                    <img class="demo cursor main_below" src="https://honasa-mamaearth-production.imgix.net/_/o/_onion-oil-150ml_.jpg?auto=format&fit=crop&w=768&auto=compress" style="width:100%" onclick="currentSlide(1)" >
                 </div>
                 <div class="column">
                     <img class="demo cursor" src="https://honasa-mamaearth-production.imgix.net/2/_/2_9.jpg?auto=format&fit=crop&w=768&auto=compress" style="width:100%" onclick="currentSlide(2)">
@@ -78,7 +79,7 @@
                     <img class="demo cursor" src="https://honasa-mamaearth-production.imgix.net/6/_/6_3.jpg?auto=format&fit=crop&w=768&auto=compress" style="width:100%" onclick="currentSlide(5)">
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="https://honasa-mamaearth-production.imgix.net/_/o/_onion-oil-150ml__.jpg?auto=format&fit=crop&w=768&auto=compress" style="width:100%" onclick="currentSlide(6)">
+                    <img class="demo cursor " src="https://honasa-mamaearth-production.imgix.net/_/o/_onion-oil-150ml__.jpg?auto=format&fit=crop&w=768&auto=compress" style="width:100%" onclick="currentSlide(6)">
                 </div>
                 </div>
             </div>
@@ -88,11 +89,11 @@
 
         
         <div id="container2A">
-            <h2>Onion Hair Oil for Hair Regrowth and Hair Fall Control with Redensyl, 150ml</h2>
+            <h2 class="product_heading">Onion Hair Oil for Hair Regrowth and Hair Fall Control with Redensyl, 150ml</h2>
             <p><img class="starA" src="	https://mamaearth.in/static/mamaearth/star.svg" width="15px" alt=""> <span>4.8</span>| <span><img src="	https://mamaearth.in/static/mamaearth/verified.svg" width="15px
                 " alt=""></span> <span>626 Reviews</span> </p> 
             <h3 class="price">Price</h3>
-            <h3>̥₹399.00</h3>
+            <h3 class="product_price">̥₹399.00</h3>
             <h4 class="greyColor">Inclusive of all Taxes</h4>
             <h4 class="redColor">Hurry! Only 17 Units Left in Stock!</h4>
             <div class="images">
@@ -103,16 +104,18 @@
                 <h3 class="price">Price</h3>
                 <p><img class="starA" src="	https://mamaearth.in/static/mamaearth/star.svg" width="15px" alt=""> <span>4.8</span>| <span><img src="	https://mamaearth.in/static/mamaearth/verified.svg" width="15px
                     " alt=""></span> <span>626 Reviews</span> </p> 
-                <h3>̥₹399.00</h3>
+                <!-- <h3 class="product_price">̥₹399.00</h3> -->
+                <h3 class="product_price" id="p_price">399</h3>
+
                 <h4 class="greyColor">Inclusive of all Taxes</h4>
                 <h4 class="redColor">Hurry! Only 17 Units Left in Stock!</h4>
-                <p class="qty">Quantity</p>
+                <!-- <p class="qty">Quantity</p> -->
                 <!-- <select class="qty">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                 </select> -->
-                <button><span><i class="fa-solid fa-cart-shopping"></i></span> ADD TO CART</button>
+                <button id="app_shop_card"><span><i class="fa-solid fa-cart-shopping"></i></span> ADD TO CART</button>
             </div>
         </div>
 
@@ -121,5 +124,7 @@
     <div id="snackbar_fail"></div>
     <div id="footer_final"></div>
 </body>
-</html>
 <script type="module" src="../js/description.js" ></script>
+<script src="https://kit.fontawesome.com/de556dab3a.js" crossorigin="anonymous"></script>
+
+</html>

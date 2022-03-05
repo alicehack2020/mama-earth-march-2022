@@ -92,7 +92,7 @@ function checkOutIteam(chekout_data_base)
         left.className="left"
     
         let product_img=document.createElement("img")
-        product_img.className="product_img"
+        product_img.className="product_img2"
         product_img.src=element.image_src
         
         left.append(product_img)
