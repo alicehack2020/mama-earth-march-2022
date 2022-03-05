@@ -27,7 +27,7 @@ let navbar=()=>{
     <li class="category"> <a href="bodt.html">BODY</a></li>
     <li class="category"> <a href="giftpacks.html">GIFT PACKS</a></li>
     <li class="category"> <a href="allproducts">ALL PRODUCTS</a> </li>
-    <li class="category"> <a href="blog.html">BLOG</a></li>
+    <li class="category"> <a href="../blog/blog.html">BLOG</a></li>
     <li class="category"> <a href="plantgoodness.html">PLANT GOODNESS</a></li>
     <li class="category"> <a href="storelocator.html">STORE LOCATOR</a></li>
     </ul>  
