@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    #main{
+        /* border: 1px solid black; */
+        width: 50%;
+        height: 580px;
+        margin: auto;
+        background-color: rgb(71,78,93);
+        padding-top: 40px;
+    }
+    #inside{
+        /* border: 1px solid lightblue; */
+        width: 60%;
+        height: 80%;
+        margin-top: 20px;
+        margin: auto;
+        padding: 20px;
+       
+        background-color:  rgb(254,254,254);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    #btn{
+        
+        margin-top: 20px;
+        width: 100px;
+        border-radius: 7px;
+    }
+</style>
+
+
+</head>
+<body>
+    <div id="main">
+     <div id="inside">
+          <h1>Sign Up</h1>
+          <p>Please fill in this form to create an account.</p>
+          <form action="" id="frm">
+            <h3> First Name</h3> 
+            <input type="text" class="fname" placeholder="Enter First name">
+           
+            <h3> Last Name</h3> 
+            <input type="text" class="lname" placeholder="Enter last name">
+
+            <h3>Email</h3> 
+            <input type="text" class="email" placeholder="Enter Email">
+
+            <h3>Password</h3> 
+            <input type="text" class="paswrd" placeholder="Enter Password">
+              <br>
+            <button id="btn">Submit</button>
+
+          </form>
+    </div>
+</body>
+</html>
+<script>
+document.getElementById("frm").addEventListener("submit",form_submit)
+ 
+function form_submit(event){
+    event.preventDefault()
+    var detail={
+ first_name:document.querySelector(".fname").value,
+  last_name:document.querySelector(".lname").value,
+   email:document.querySelector(".email").value,
+  password:document.querySelector(".paswrd").value,
+} 
+
+ 
+  localStorage.setItem("info",JSON.stringify(detail))
+  alert("Registration Successful")
+  window.location.href="front.html"
+}
+</script>
+  
+ 
