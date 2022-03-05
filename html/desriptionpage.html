@@ -4,44 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/home.css">
+    <link rel="stylesheet" href="../style/toastmessage.css">
+    <link rel="stylesheet" href="../style/faq.css">
+    <link rel="stylesheet" href="../index.css">
     <script src="https://kit.fontawesome.com/de556dab3a.js" crossorigin="anonymous"></script>
     <title>Document</title>
-    <link rel="stylesheet" href="description.css">
+    <link rel="stylesheet" href="../style/description.css">
 </head>
 <body>
-    <div id="main">
-        <div id="container1">
-            <div id="maincontainer">
+    <div id="header_section">
+    </div>
+    <div id="mainA">
+        <div id="container1A">
+            <div id="maincontainerA">
               <!-- Container for the image gallery -->
-            <div class="container">
+            <div class="containerA">
 
                 <!-- Full-width images with number text -->
-                <div class="mySlides">
+                <div class="mySlidesA">
                 <div class="numbertext">1 / 6</div>
                     <img src="https://honasa-mamaearth-production.imgix.net/_/o/_onion-oil-150ml_.jpg?auto=format&fit=crop&w=768&auto=compress" style="width:100%">
                 </div>
             
-                <div class="mySlides">
+                <div class="mySlidesA">
                 <div class="numbertext">2 / 6</div>
                     <img src="https://honasa-mamaearth-production.imgix.net/2/_/2_9.jpg?auto=format&fit=crop&w=768&auto=compress" style="width:100%">
                 </div>
             
-                <div class="mySlides">
+                <div class="mySlidesA">
                 <div class="numbertext">3 / 6</div>
                     <img src="https://honasa-mamaearth-production.imgix.net/3/_/3_6.jpg?auto=format&fit=crop&w=768&auto=compress" style="width:100%">
                 </div>
             
-                <div class="mySlides">
+                <div class="mySlidesA">
                 <div class="numbertext">4 / 6</div>
                     <img src="https://honasa-mamaearth-production.imgix.net/4/_/4_8.jpg?auto=format&fit=crop&w=768&auto=compress" style="width:100%">
                 </div>
             
-                <div class="mySlides">
+                <div class="mySlidesA">
                 <div class="numbertext">5 / 6</div>
                     <img src="https://honasa-mamaearth-production.imgix.net/6/_/6_3.jpg?auto=format&fit=crop&w=768&auto=compress" style="width:100%">
                 </div>
             
-                <div class="mySlides">
+                <div class="mySlidesA">
                 <div class="numbertext">6 / 6</div>
                     <img src="https://honasa-mamaearth-production.imgix.net/_/o/_onion-oil-150ml__.jpg?auto=format&fit=crop&w=768&auto=compress" style="width:100%">
                 </div>
@@ -82,7 +88,7 @@
         </div>
 
         
-        <div id="container2">
+        <div id="container2A">
             <h2>Onion Hair Oil for Hair Regrowth and Hair Fall Control with Redensyl, 150ml</h2>
             <p><img class="star" src="	https://mamaearth.in/static/mamaearth/star.svg" width="15px" alt=""> <span>4.8</span>| <span><img src="	https://mamaearth.in/static/mamaearth/verified.svg" width="15px
                 " alt=""></span> <span>626 Reviews</span> </p> 
@@ -112,37 +118,9 @@
         </div>
 
     </div>
+    <div id="snackbar_added"></div>
+    <div id="snackbar_fail"></div>
+    <div id="footer_final"></div>
 </body>
 </html>
-<script>
-    var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
+<script type="module" src="../js/description.js" ></script>
