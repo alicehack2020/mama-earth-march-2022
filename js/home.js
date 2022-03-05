@@ -1,3 +1,19 @@
+let loginicon=document.querySelector(".loginform")
+
+let center_pop_up=document.querySelector(".center_pop_up")
+
+loginicon.addEventListener("click",openLoginForm)
+
+function openLoginForm()
+{
+   center_pop_up.style.display = "block";
+}
+
+
+
+
+
+
 let chekout_data_base=JSON.parse(localStorage.getItem("chekout_data_base"))
 
 if(chekout_data_base==null)
@@ -411,4 +427,3 @@ function myFunction() {
     }, 2000);
   }
 
- 
