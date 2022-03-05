@@ -8,9 +8,13 @@
    <link rel="stylesheet" href="index.css">
    <link rel="stylesheet" href="./style/home.css">
    <link rel="stylesheet" href="./style/product_slider.css">
+   <link rel="stylesheet" href="./style/toastmessage.css">
+   <link rel="stylesheet" href="./style/pop_up.css">
    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 <body>
+
+     
    <div id="smallcontainer">
        <ul>
            <li>Asia's 1st Brand with MADE SAFE Certified Products </li>
@@ -26,15 +30,15 @@
         <button class="searchbtn"><span class="icon" ><i class="fa-solid fa-magnifying-glass"></i></span> Search</button>
        </div>
        <div class="logincart">
-        <a href="cart.html"><span class="loginicon" ><i class="fa-solid fa-cart-shopping"></i></span> Cart</a>
-        <a href="login.html"><span class="loginicon" ><i class="fa-solid fa-user"></i></span> Login</a>
+        <a href="./html/checkout.html"><span class="loginicon" ><i class="fa-solid fa-cart-shopping"></i></span> Cart</a>
+        <a href="#" class="loginform"><span class="loginicon"><i class="fa-solid fa-user"></i></span>Login</a>
        </div> 
    </div> 
 
    <div id="container2">
        <ul class="mainmenu">
         <li class="category"> <a href="index.html">HOME</a></li>
-        <li class="category"> <a href="baby.html">BABY</a>></li>
+        <li class="category"> <a href="./html/baby.html">BABY</a>></li>
         <li class="category"> <a href="beauty.html">BEAUTY</a></li>
         <li class="category"> <a href="hair.html">HAIR</a></li>
         <li class="category"> <a href="face.html">FACE</a></li>
@@ -48,15 +52,32 @@
    </div>
    <div id="slideshow"></div>
 
+   <div class="center_pop_up">
+     <div class="cancel">cancel</div>
+      <h2 class="login_heading">Login to get started</h2>
+      <div class="flex login_sub_heading">
+        <img src="./images/login_mobile_icon.svg" alt="">
+        <p>Get access to your orders, track
+            previous order & Redeem Mama
+            Cash</p>
+      </div>
+      <input type="number" name="" id="">
+      <p>By Continuing, you agree to Mamaearth's <span class="t_and_c">Terms's and</span></p>
+      <p><span class="t_and_c">conditions</span>and<span class="t_and_c">Privacy Policy</span></p>
+    
+   </div>
+ </div>
+    </div>
+  </div>
+  
 
    <div class="top-products flex align-center">
         
     <div class="seller_left text-center center justify-center">
-       <h1>Onion Range</h1>
+       <h1>Best Sellers</h1>
        <div class="para1">
-           Explore 100% toxin-free and safe Onion 
-           Range for Hair Fall, formulated with 
-           the goodness of natural ingredients and no harmful chemicals.
+        Explore best-selling safe, natural, and 100% toxin-free baby and beauty products from Mamaearth. 
+        Get amazing deals and start your toxin-free skin, hair, and baby care journey.
        </div>
        <div class="view_all_btn">VIEW ALL</div>
    </div>
@@ -77,11 +98,10 @@
 <div class="top-products flex align-center  ">
   
    <div class="seller_left text-center center justify-center">
-       <h1>Onion Range</h1>
+       <h1>Best Deals</h1>
        <div class="para1">
-           Explore 100% toxin-free and safe Onion 
-           Range for Hair Fall, formulated with 
-           the goodness of natural ingredients and no harmful chemicals.
+        Explore best-selling safe, natural, and 100% toxin-free baby and beauty products from Mamaearth.
+         Get amazing deals and start your toxin-free skin, hair, and baby care journey.
        </div>
        <div class="view_all_btn">VIEW ALL</div>
    </div>
@@ -101,11 +121,10 @@
 
 <div class="top-products flex align-center  ">
    <div class="seller_left text-center center justify-center">
-       <h1>Onion Range</h1>
+       <h1>Onion Range </h1>
        <div class="para1">
-           Explore 100% toxin-free and safe Onion 
-           Range for Hair Fall, formulated with 
-           the goodness of natural ingredients and no harmful chemicals.
+        Explore 100% toxin-free and safe Onion Range for Hair Fall, 
+        formulated with the goodness of natural ingredients and no harmful chemicals
        </div>
        <div class="view_all_btn">VIEW ALL</div>
    </div>
@@ -116,6 +135,8 @@
 
            <div class="food-slider load_slider3" id="slider3">
            </div>
+           <div id="snackbar_added"></div>
+           <div id="snackbar_fail"></div>
        </div>
    </div>
 </div>

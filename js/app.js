@@ -33,5 +33,15 @@ $(document).ready(function()
 })
 
 
+$(document).ready(function()
+{
+    $('.load_slider5').slick({
+        autoplay:true,
+        slidesToShow:4,
+        slidesToScroll:1,
+        prevArrow:".prev-btn5",
+        nextArrow:".next-btn5"
+    })
+})
 
 

@@ -1,0 +1,38 @@
+summary {
+    font-size: 1.25rem;
+    font-weight: 70;
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border-radius: 0.25rem;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+  }
+  details > summary::after {
+    position: absolute;
+     
+    right: 20px;
+  }
+  details[open] > summary::after {
+    position: absolute;
+    right: 20px;
+    
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+   
+  }
+
+  .faq{
+      margin-top: 50px;
+      display: grid;
+      margin-left: 40px;
+      color: rgb(96, 99, 100);
+  }
+  
+  .faq__content p{
+      margin-left: 20px;
+      color: rgb(19, 76, 102);
+  }
