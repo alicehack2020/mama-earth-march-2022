@@ -70,9 +70,11 @@ a{
     text-decoration: none;
      font-size: 0.8rem;
     font-weight: 600;
-    color: rgb(92, 92, 92);
-    /* font-family:"Roboto"; */
+     color: rgb(92, 92, 92);
+    font-family:"Roboto";
     margin-left: 10px;
+    font-size: small;
+    font-style: bold;
 }
 a:hover{
     color: #00afef;

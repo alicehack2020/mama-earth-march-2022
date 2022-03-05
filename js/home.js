@@ -1,6 +1,7 @@
 let loginicon=document.querySelector(".loginform")
 
 let center_pop_up=document.querySelector(".center_pop_up")
+let center_pop_up2=document.querySelector(".center_pop_up2")
 
 loginicon.addEventListener("click",openLoginForm)
 
@@ -10,7 +11,42 @@ function openLoginForm()
 }
 
 
+let cancel=document.getElementById("cancel")
+cancel.addEventListener("click",closePopUp)
+function closePopUp()
+{
+    center_pop_up.style.display="none"
+}
 
+
+let cancel2=document.getElementById("cancel2")
+cancel2.addEventListener("click",closePopUp2)
+
+function closePopUp2()
+{
+    center_pop_up2.style.display="none"
+}
+
+
+
+
+let LOGIN_WITH_OTP=document.getElementById("LOGIN_WITH_OTP")
+LOGIN_WITH_OTP.addEventListener("click",otpopen)
+function otpopen()
+{
+    center_pop_up.style.display="none"
+    center_pop_up2.style.display="block"
+
+}
+
+
+
+let VERIFY_OTP=document.getElementById("VERIFY_OTP")
+VERIFY_OTP.addEventListener("click",VERIFY_OTP1)
+function VERIFY_OTP1()
+{
+     center_pop_up2.style.display="none"
+}
 
 
 
