@@ -124,6 +124,12 @@ function createitems1(element)
     let product_cart=document.createElement("div")
     product_cart.className="products food-card .magic-shadow-sm"
     product_cart.id="product1"
+
+    product_cart.onclick=function()
+    {
+        SaveInOnePlace(element)
+        window.location="../html/desriptionpage.html"
+    }
      
     let best_seller_tag=document.createElement("div")
     best_seller_tag.className="best_seller_tag"
@@ -170,7 +176,7 @@ function createitems1(element)
         {
             addToLocalCard(element)
         }
-
+       
     
    
 
@@ -188,6 +194,12 @@ function createitemsdeallist(element)
     let product_cart=document.createElement("div")
     product_cart.className="products food-card .magic-shadow-sm"
     product_cart.id="product1"
+
+    product_cart.onclick=function()
+    {
+        SaveInOnePlace(element)
+        window.location="../html/desriptionpage.html"
+    }
      
     let best_seller_tag=document.createElement("div")
     best_seller_tag.className="best_seller_tag"
@@ -272,6 +284,14 @@ else{
        // alert(ldata.length)
     }
 }
+
+
+function SaveInOnePlace(element)
+{
+    //console.log(element);
+    localStorage.setItem("SaveInOnePlace",JSON.stringify(element))   
+}
+
  
 function myFunction() {
     var x = document.getElementById("snackbar_fail");
