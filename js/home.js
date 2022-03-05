@@ -44,11 +44,13 @@ function otpopen()
 
 
 let VERIFY_OTP=document.getElementById("VERIFY_OTP")
+ 
 VERIFY_OTP.addEventListener("click",VERIFY_OTP1)
 function VERIFY_OTP1()
 {
      center_pop_up2.style.display="none"
      userName.style.display="block"
+     loginicon.style.display="none"
      localStorage.setItem("user_names","Mangesh Pandit")
 }
 
