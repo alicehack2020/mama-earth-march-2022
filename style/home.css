@@ -52,34 +52,42 @@
 /* ---------media query------------ */
 @media (min-width:475px) {
    
-    .seller_left
+    /* .seller_left
     {
-        visibility: hidden;
-    }
+       display: none;
+    } */
 }
 
-@media (min-width:768px) {
+@media (max-width:768px) {
      
     .seller_left
     {
-        visibility: hidden;
+         display: none;
     }
     
+.div1 >img ,.div2 >img{
+    width: 50px;
 }
-
-@media (min-width:992px) {
-    .seller_left
-    {
-        visibility: visible;
-    } 
-   
-    
+.div1,.div2,.div3{
+     padding: 30px;
+     margin: 20px;
+     border: 1px solid var(--border);
+     
 }
-
-@media (min-width:1200px) {
+.div1{
+    margin-left: 100px;
      
     
 }
+.Super_Safe_Standards{
+    margin-bottom: -80px;
+}
+    
+}
+
+ 
+
+ 
 
 *{
     padding: 0;
@@ -371,11 +379,13 @@ iframe{
     width: 80px;
 }
 .div1,.div2,.div3{
-    padding-top: 20px;
+    padding: 30px;
+     margin: 20px;
+     border: 1px solid var(--border);
 }
 .div1{
     margin-left: 100px;
-    border: 1px solid var(--border);
+    /* border: 1px solid var(--border); */
 }
 .payment_mode > img{
     width: 50px;

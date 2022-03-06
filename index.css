@@ -1,55 +1,75 @@
- *{
-     margin: 0;
-     padding: 0;
- }
- #smallcontainer{
-     height: 26px;
-     background-color: #d4424c;
+*{
+    margin: 0;
+    padding: 0;
+}
 
- }
- ul{
-     display: flex;
-     gap: 100px;
-     align-items: center;
-     justify-content: space-evenly;
-     color: white;
-     font-size: 13px;
-     padding: 5px 0px ;
-     list-style: none;
- }
- #userName{
-     display: none;
- }
- #container1{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 70px;
-    border-bottom: 1px solid lightgray;
+
+/* ---------media query------------ */
+@media (min-width:475px) {
+  
+   /* .seller_left
+   {
+      display: none;
+   } */
+}
+
+@media (max-width:768px) {
     
-    /* background: grey; */
+    #plant_info{
+        display: none;
+    }
+    .Our_Goodness_Promise{
+        flex-direction: column;
+    }
+    .the_heading{
+        display: none;
+    }
+    
+#smallcontainer ul li{
+   font-size: small; 
+}
+
+#smallcontainer ul{
+   justify-content: center;
+   text-align: center; 
+   margin-bottom: 20px;
+   background-color: #ec120b;
+    
+}
+
+#container1{
+   display: grid;
+   grid-template-columns: repeat(6,1fr);
+   grid-template-rows: repeat(2,1fr);
+   margin-bottom: 20px;
+   
+   
 }
 .search_section{
-    margin-left: 20px;
-    margin-right: -40px;
+ grid-row: 2/-1;
+ grid-column: 2/5;
+  
+}
+.logincart{
+    grid-row: 1/2;
+    grid-column: 2/4;
+
+}
+.logo_div{
+    grid-column: 1/2;
+    grid-row: 2/3;
 }
 
-
-.logo{
-    margin-left: 100px;
-    height: 40px;
-    margin-right: 120px;
-    max-width: 145px;
-}
-.searchbar{
+#search_input{
     width: 500px;
     border-radius: 4px;
-    margin-left: -280px;
     padding: 8px;
     border: 1px solid lightgrey ;
     outline: none;
-}
-.searchbtn{
+    height: 40px;
+ }
+
+ .searchbtn{
     width: 100px;
     padding: 8px;
     padding-left: 10px;
@@ -60,57 +80,130 @@
     background-color: #00afef;
     border-radius: 4px;
     font-style: normal;
-}
-.icon{
-    padding-right: 5px;
-}
-.logincart{
-    display: flex;
-    gap: 40px;
-    margin-right: 50px;
-}
-.logincart a{
-  font-size: medium;
-  font-family: "Roboto";
-}
-.loginicon{
-    color: #00afef;
-    margin-right: 5px;
-}
-a{
-    text-decoration: none;
-     font-size: 0.8rem;
-    font-weight: 600;
-     color: rgb(92, 92, 92);
-    font-family:"Roboto";
-    margin-left: 10px;
-    font-size: small;
-    font-style: bold;
-}
-a:hover{
-    color: #00afef;
-}
-#container2{
     height: 40px;
-    display: flex;
-    list-style: none;
-    align-items: center;
-    justify-content: center;
-    max-width: 100%;
-  /* //  box-shadow: 0 4px 8px 0 rgba(231, 13, 13, 0), 0 6px 20px 0 rgb(105, 102, 102); */
+ }
+ .icon{
+    padding-right: 5px;
+ }
+
+ .logincart a{
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: medium;
+    color: #5C5C5C;
+ }
+ .logincart i{
+    text-decoration: none;
+    margin: 0 10px;
+    color: #00AFF5; 
+ }
+
+ #container2{
+     display: none;
+ }
+ #slideshow img{
+     width: 100%;
+ }
+
 
 }
+
+
+
+
+
+
+
+
+
+/* --------media query end---------------- */
+
+
+#slideshow img{
+    width: 100%;
+}
+
+#smallcontainer ul li{
+    color: white;
+    font-size: small;
+    list-style: none;
+    margin-top: 8px;
+    margin-bottom: 8px;
+     
+ }
+ 
+ #smallcontainer ul{
+     display: flex;
+    justify-content: space-around;
+    text-align: center; 
+    margin-bottom: 20px;
+    background-color: #D4424C;
+     
+ }
+
+
+#container1{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    margin-left: 40px;
+    margin-right: 80px;
+    justify-content: center;
+}
+#userName{
+    display: none;
+}
+ 
+
+.searchbtn{
+   width: 100px;
+   padding: 8px;
+   padding-left: 10px;
+   background: none;
+   border: none;
+   outline: none;
+   color: white;
+   background-color: #00afef;
+   border-radius: 4px;
+   font-style: normal;
+}
+.icon{
+   padding-right: 5px;
+}
+
+ #search_input{
+    width: 500px;
+    border-radius: 4px;
+    padding: 8px;
+    border: 1px solid lightgrey ;
+    outline: none;
+ }
+ .logincart a{
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: medium;
+    color: #5C5C5C;
+ }
+ .logincart i{
+    text-decoration: none;
+    margin: 0 10px;
+    color: #00AFF5;
+    
+ }
+
+ #container2{
+     margin-top: 20px;
+     margin-bottom: 10px;
+ }
 .mainmenu{
+    
     display: flex;
-    gap: 30px;
-    justify-content: space-evenly;
-    font-size: 10px;
-    align-items: center;
+    list-style: none;
+    justify-content: space-around;
+    margin: 0 100px;
+}
+.mainmenu li a{
+    text-decoration: none;
+    color: #5C5C5C; 
 }
 
  
-img{
-    border-style: none;
-    max-width: 100%;
-}
-

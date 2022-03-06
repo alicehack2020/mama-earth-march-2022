@@ -37,6 +37,43 @@
     --primary2:#534e4e42;
 }
 
+
+@media (max-width:768px) {
+     
+    .container{
+        display: none;
+        
+   }
+   
+   .top-products{
+    background: var(--light);
+    display: grid;
+    place-content: center;
+}
+body{
+    overflow-x: hidden;
+}
+
+.top-products .slider-btn{
+    background-color: black;
+}
+
+
+.prev-btn{
+    display: none;
+}
+
+.next-btn{
+    background-color: #FE4545;
+    display: none;
+}
+
+
+    
+}
+
+
+
 /* ------font smoothing applied---------- */
 
 body{
@@ -50,10 +87,10 @@ body{
 }
 
 .container{
-    width: 100%;
+     width: 100%;
      padding-right: 15%;
-    margin: 0 auto;
-    max-width: 1100px;
+     margin: 0 auto;
+     max-width: 1100px;
 }
 
  /* -------to reused created classes for property  utility class----------- */
