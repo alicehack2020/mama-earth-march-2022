@@ -6,11 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "icon" href = "../images/mamaearth-logo.png" type = "image/x-icon">
-
+    
+    <style>
+        img{
+         display: grid;
+         margin: auto;
+         margin-top: 50px;
+        }
+    </style>
     <title>Thank You</title>
 </head>
 <body>
-    <img src="order.png" alt="">
-    Thank You
+    <img src="../images/order.png" alt="" id="image_click">
+    <!-- //<img src="../index.html" alt=""> -->
 </body>
+<script>
+    let image_click=document.getElementById("image_click")
+    image_click.addEventListener("click",goHome)
+    function goHome(){
+        window.location="../index.html"
+    }
+</script>
 </html>
