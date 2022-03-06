@@ -86,7 +86,7 @@ let footer=()=>{
 
         <div class="three">
             <div>MY ACCOUNT</div>
-            <p>Accunt</p> 
+            <p>Account</p> 
             <p>Orders</p> 
         </div>
 
