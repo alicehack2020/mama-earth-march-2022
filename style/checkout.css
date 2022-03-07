@@ -17,6 +17,23 @@
     margin: 0;
     box-sizing: border-box;
 }
+@media (max-width:768px) {
+    .payment_screen_main{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(3,1fr);
+    }
+    #checkout_rigth{
+        grid-column: 1/2;
+        grid-template-rows: 2/3;
+    }
+
+
+
+}
+
+
+
 .payment_screen_main{
     display: grid;
     grid-template-columns: repeat(2,1fr);
