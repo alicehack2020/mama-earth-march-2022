@@ -1,4 +1,3 @@
-# Team_nitrogen
 
 ## Project Title : MAMA EARTH CLONE<br /><br />
 
@@ -105,7 +104,7 @@
 <br></br>
 <i><b>4. Click on <i>"HAIR"</i> button from the upper bar</b></i>
 
-<img width="929" alt="community" src="./images/hair.png">
+<!-- <img width="929" alt="community" src="./images/hair.png"> -->
 
 <ul>
 <li>
@@ -118,8 +117,8 @@
 
 <i><b>5. Click on <i>"FACE"</i> button from the upper bar</b></i>
 
-<img width="929" alt="community" src="./images/face.png">
-
+<!-- <img width="929" alt="community" src="./images/face.png">
+ -->
 <ul>
 <li>
         <b>FACE</b>: In this page all the products are showing which is related to the FACE like cream, powder, etc.<br />
@@ -131,8 +130,8 @@
 
 <i><b>6. Click on <i>"BODY"</i> button from the upper bar</b></i>
 
-<img width="929" alt="community" src="./images/body.png">
-
+<!-- <img width="929" alt="community" src="./images/body.png">
+ -->
 <ul>
 <li>
         <b>BODY</b>: In this page all the products are showing which is related to the Body like Lotion, oil, etc.<br />
@@ -144,8 +143,8 @@
 
 <i><b>7. Click on <i>"GIFT PACK"</i> button from the upper bar</b></i>
 
-<img width="929" alt="community" src="./images/gift.png">
-
+<!-- <img width="929" alt="community" src="./images/gift.png">
+ -->
 <ul>
 <li>
         <b>GIFT PACK</b>: In this page all the products are showing which is Specially for gifts to set of items.<br />
@@ -157,8 +156,8 @@
 
 <i><b>8. Click on <i>"ALL PRODUCTS"</i> button from the upper bar</b></i>
 
-<img width="929" alt="community" src="./images/allproduct.png">
-
+<!-- <img width="929" alt="community" src="./images/allproduct.png">
+ -->
 <ul>
  <li>
         <b>ALL PRODUCTS</b>: In this page all the products are showing.<br />
@@ -170,16 +169,16 @@
 <hr></hr></br>
 <i><b>Cart checkout page for place the order of products.</b></i></br></br>
 
-<img width="929" alt="community" src="./images/cart1.png">
-
+<!-- <img width="929" alt="community" src="./images/cart1.png">
+ -->
 <ul></br>
         <li>From cart page you can fill the details of the Customer and placed the order</li><br/>
         <li>After placed the it show some message</li></br></br>
 <li> That's all about "ALL PRODUCTS" now moving on to the next one...</li>
 </ul>
 <br></br>
-<img width="929" alt="community" src="./images/cart2.png">
-
+<!-- <img width="929" alt="community" src="./images/cart2.png">
+ -->
 <hr></hr>
 
 <hr></hr>
