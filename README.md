@@ -21,8 +21,7 @@
 <li> VS CODE</li>
 <li> GIT</li>
 <li> GITHUB</li>
-<li> MOCK SERVER API's</li>
-<li> HEROKU FOR MOCK SERVER API's DATA STORE</li>
+<li> Local Storage</li>
 </ol>
 
 # Tools for communications
