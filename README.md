@@ -193,8 +193,8 @@
 
  👤 akash patil
  <ul>
- <li>Github : akash patil
- <li>Email : akash patil@gmail.com
+ <li>Github : patilakash211
+ <li>Email : patilakash211@gmail.com
  </ul>
 <h1></h1>
  👤 raju shahu
