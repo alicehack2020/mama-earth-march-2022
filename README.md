@@ -42,7 +42,7 @@
 
 <i><b>1. Click on <i>"MAMA EARTH"</i> button from the upper bar</b></i><br /><br />
 
-<img width="929" alt="hh" src="./images/2h.png"><br />
+<!-- <img width="929" alt="hh" src="./images/2h.png"><br /> -->
 
 <ul>
 <li>It show all the listed categories of products. </li>  <br /> 
@@ -87,7 +87,7 @@
 <br></br>
 <i><b>3. Click on <i>"BEAUTY"</i> button from the upper bar</b></i>
 
-<img width="929" alt="food" src="./images/beauty.png">
+<!-- <img width="929" alt="food" src="./images/beauty.png"> -->
 
 <ul>
 <li>
