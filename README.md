@@ -190,11 +190,10 @@
 <hr></hr>
 
 <h1></h1>
-
- 👤 akash patil
+👤 Mangesh Pandit 
  <ul>
- <li>Github : patilakash211
- <li>Email : patilakash211@gmail.com
+ <li>Github : alicehack2020
+ <li>Email : (mangesh2042@gmail.com)
  </ul>
 <h1></h1>
  👤 raju shahu
@@ -215,12 +214,12 @@
  </ul>
 
 <h1></h1>
-
-👤 Mangesh Pandit 
+👤 akash patil
  <ul>
- <li>Github : alicehack2020
- <li>Email : (mangesh2042@gmail.com)
+ <li>Github : patilakash211
+ <li>Email : patilakash211@gmail.com
  </ul>
+
 
  <h1></h1>
 ## Thank u for giving it a read................
