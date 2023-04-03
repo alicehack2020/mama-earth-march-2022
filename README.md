@@ -71,7 +71,7 @@
 <br></br>
 <i><b>2. Click on <i>"BABY"</i> button in the upper Menu</b></i>
 
-<img width="929" alt="food" src="./images/baby.png">
+
 
 <ul>
 <li>
